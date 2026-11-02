@@ -275,3 +275,27 @@ Autorizzata anche la telemetria aggiuntiva del client. La prova locale di creazi
 Nessun aggiramento delle restrizioni IPC viene applicato. Per la verifica effettiva serve eseguire gli strumenti gia pubblicati su un sistema che consenta IPC locale, con Unity 2022.3.62f2 attivato tramite Hub. Le autorizzazioni all'avvio del client e alla telemetria sono gia state ricevute. Evidenza: [reports/unity-ipc-blocker.json](reports/unity-ipc-blocker.json).
 
 **Completamento verificato: 60%.** Editor e modulo Windows installati, strumenti Editor compilati; importazione, build del gioco e partita non ancora verificate.
+
+### Devlog — collegamento del codice ricompilato al progetto Unity
+
+Aggiunto `unity_code.py`: prepara le quattro DLL dai sorgenti recuperati, verifica le 171 dipendenze, confronta gli assembly originali e ricompilati, quindi consente di sostituire soltanto le DLL corrispondenti nel progetto Unity unico. Le meta esistenti non vengono riscritte: GUID e impostazioni di importazione restano quelli dell'export.
+
+```bash
+python unity_code.py stage .local/unity-code --dotnet /percorso/dotnet
+python unity_code.py apply /percorso/SolateriaUnity .local/unity-code
+python unity_code.py verify /percorso/SolateriaUnity /percorso/SolateriaUnity/RecoveryCodeBackups/ID/transaction.json
+```
+
+Usare la destinazione stage nuova, le dipendenze originali in `References/` e SDK .NET 8. Il primo comando ricompila anche il verificatore metadata quando necessario. Il secondo richiede Unity chiuso e stampa il percorso reale della transazione da usare nel terzo comando. DLL assenti, duplicate, modificate rispetto alla baseline o stage alterato interrompono la sostituzione prima di modificare gli assembly del progetto.
+
+I backup sono in `RecoveryCodeBackups`, fuori da Assets per evitare assembly duplicati nell'importazione. Una sostituzione fallita ripristina i file gia cambiati; se il processo viene interrotto, il checkpoint e i backup consentono il ripristino esplicito:
+
+```bash
+python unity_code.py rollback /percorso/SolateriaUnity /percorso/SolateriaUnity/RecoveryCodeBackups/ID/transaction.json
+```
+
+Il ripristino rifiuta DLL o meta successivamente modificate dall'utente. `verify` controlla DLL installate, meta e backup; non certifica l'avvio del gioco. Il precedente `verify-copy` conserva la baseline originale e, dopo l'applicazione, segnala intenzionalmente le quattro DLL sostituite: il suo manifesto non viene falsificato o aggiornato per nascondere le modifiche. Prima della sostituzione verificare la copia completa; dopo usare anche il rapporto della transazione.
+
+**Verifica reale eseguita:** ricompilate le quattro DLL con SDK 8.0.100, zero errori; stage completo di quattro file prodotto con codice di uscita 0. Il confronto metadata conferma per tutti e quattro gli assembly la stessa identita e nessun nome di tipo o campo non generato mancante. Il verificatore non confronta firme dei campi, layout serializzato, codice generato o comportamento: non e una prova di compatibilita completa dei salvataggi o del runtime. Restano warning di compilazione nei sorgenti recuperati.
+
+Superati **86 test locali**, incluse transazioni con errore dopo la prima sostituzione, rollback, stage corrotto, DLL duplicate e meta modificate. L'applicazione al progetto completo e l'avvio in Unity non sono ancora verificati per il blocco IPC gia documentato. Evidenze: [reports/unity-code-staging.json](reports/unity-code-staging.json) e [reports/rebuilt-assembly-names.json](reports/rebuilt-assembly-names.json). **Completamento verificato: 60%.**

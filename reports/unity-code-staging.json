@@ -1,0 +1,85 @@
+{
+  "compiled_assemblies": 4,
+  "staged_assemblies": 4,
+  "build_exit_code": 0,
+  "stage_exit_code": 0,
+  "sdk": "8.0.100",
+  "reference_dlls_verified": 171,
+  "source_files_hashed": 1571,
+  "assemblies": [
+    {
+      "name": "Assembly-CSharp-firstpass.dll",
+      "sha256": "827f4415ff91a7602f71755e74e1003d50b6b830400abb162683ebe9c4c22957",
+      "bytes": 15360,
+      "original_sha256": "9513c0741e6b8c6fa6101009188bd099de6501aebf3d7af63ec94d7db4262602"
+    },
+    {
+      "name": "StaticData.dll",
+      "sha256": "c92e75e9c7519af705cdee1c3d2deac27aa61d6ddb67a283bb1e708630ebce63",
+      "bytes": 70144,
+      "original_sha256": "c6fbb05bd8b4f9f1009b589fc4649740eddd73205665313af2560e03fa7e52e5"
+    },
+    {
+      "name": "Core.dll",
+      "sha256": "1866f6ce67d1a4ba492667be6cde36ad8ea1a2917adb7177f55ce67e0a304fd9",
+      "bytes": 3052544,
+      "original_sha256": "6fef4ffee96dad4727574cf4a12977bbbe8ef985e2bb8cb4d896d16c2ad5db68"
+    },
+    {
+      "name": "Assembly-CSharp.dll",
+      "sha256": "221e0a67f42b6a098b175e3fa1ea265c6d02fd69f7c33c00e0d304b8976a040f",
+      "bytes": 310272,
+      "original_sha256": "d77cc2bf94b134fa2f49d65c9430f5438f05630e0c574ac56dc517abc532a3bc"
+    }
+  ],
+  "metadata_name_check": {
+    "ok": true,
+    "scope": "assembly identity and nongenerated type/field names only; not serialized ABI or runtime validation",
+    "assemblies": [
+      {
+        "assembly": "Assembly-CSharp-firstpass.dll",
+        "identity_before": "Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "identity_after": "Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "original_nongenerated_types": 13,
+        "rebuilt_nongenerated_types": 15,
+        "missing_type_names": [],
+        "missing_declared_field_names": [],
+        "name_check_passed": true
+      },
+      {
+        "assembly": "StaticData.dll",
+        "identity_before": "StaticData, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "identity_after": "StaticData, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "original_nongenerated_types": 65,
+        "rebuilt_nongenerated_types": 67,
+        "missing_type_names": [],
+        "missing_declared_field_names": [],
+        "name_check_passed": true
+      },
+      {
+        "assembly": "Core.dll",
+        "identity_before": "Core, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+        "identity_after": "Core, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+        "original_nongenerated_types": 1597,
+        "rebuilt_nongenerated_types": 1600,
+        "missing_type_names": [],
+        "missing_declared_field_names": [],
+        "name_check_passed": true
+      },
+      {
+        "assembly": "Assembly-CSharp.dll",
+        "identity_before": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "identity_after": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "original_nongenerated_types": 141,
+        "rebuilt_nongenerated_types": 143,
+        "missing_type_names": [],
+        "missing_declared_field_names": [],
+        "name_check_passed": true
+      }
+    ]
+  },
+  "unit_tests_passed": 86,
+  "game_project_overlay_applied": false,
+  "unity_editor_verified": false,
+  "runtime_verified": false
+}

@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "scope": "assembly identity and nongenerated type/field names only; not serialized ABI or runtime validation",
+  "assemblies": [
+    {
+      "assembly": "Assembly-CSharp-firstpass.dll",
+      "identity_before": "Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "identity_after": "Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "original_nongenerated_types": 13,
+      "rebuilt_nongenerated_types": 15,
+      "missing_type_names": [],
+      "missing_declared_field_names": [],
+      "name_check_passed": true
+    },
+    {
+      "assembly": "StaticData.dll",
+      "identity_before": "StaticData, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "identity_after": "StaticData, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "original_nongenerated_types": 65,
+      "rebuilt_nongenerated_types": 67,
+      "missing_type_names": [],
+      "missing_declared_field_names": [],
+      "name_check_passed": true
+    },
+    {
+      "assembly": "Core.dll",
+      "identity_before": "Core, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+      "identity_after": "Core, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+      "original_nongenerated_types": 1597,
+      "rebuilt_nongenerated_types": 1600,
+      "missing_type_names": [],
+      "missing_declared_field_names": [],
+      "name_check_passed": true
+    },
+    {
+      "assembly": "Assembly-CSharp.dll",
+      "identity_before": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "identity_after": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "original_nongenerated_types": 141,
+      "rebuilt_nongenerated_types": 143,
+      "missing_type_names": [],
+      "missing_declared_field_names": [],
+      "name_check_passed": true
+    }
+  ]
+}
