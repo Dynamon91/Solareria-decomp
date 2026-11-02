@@ -1,0 +1,12 @@
+{
+  "editor_version": "2022.3.62f2",
+  "license_client_explicitly_authorized": true,
+  "license_verified": false,
+  "game_build_verified": false,
+  "runtime_verified": false,
+  "exit_code": 199,
+  "client_started": true,
+  "ipc_connection_verified": false,
+  "additional_cdp_egress_blocked_by_auto_review": true,
+  "game_project_imported": false
+}

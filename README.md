@@ -257,3 +257,12 @@ Il tentativo batch di creare un progetto minimo termina con **codice 199** e `IP
 Fonti: [release ufficiale](https://unity.com/releases/editor/whats-new/2022.3.62f2), [metadati ufficiali di download](https://services.api.unity.com/unity/editor/release/v1/releases?version=2022.3.62f2). Evidenza sintetica, priva di identificativi del computer: [reports/unity-environment-verification.json](reports/unity-environment-verification.json).
 
 **80 test locali superati. Completamento verificato: 60%.** L'editor ora e installato e gli strumenti compilano; importazione del gioco, integrazione delle risorse, compilazione del player e partita restano da convalidare dopo lo sblocco della licenza.
+
+
+### Devlog — tentativo autorizzato del client licenze
+
+Ricevuta autorizzazione esplicita all'avvio del client licenze e al relativo invio di dati a Unity. Il client si avvia e dichiara il server IPC in ascolto, ma l'editor continua a terminare con codice 199: connessione al canale LicensingClient non riuscita. Questa evidenza non dimostra un'attivazione della licenza e non consente di importare o compilare il progetto di gioco.
+
+Il tentativo diagnostico successivo e stato bloccato dal controllo automatico per un'ulteriore destinazione CDP di telemetria, ritenuta fuori dall'autorizzazione gia concessa. Nessun nuovo tentativo di egress o aggiramento viene applicato. Occorre autorizzare separatamente tale telemetria oppure eseguire il runner in un ambiente Unity gia attivato e funzionante. Evidenza sintetica: [reports/unity-license-check.json](reports/unity-license-check.json).
+
+**Completamento verificato: 60%.** Nessuna build o partita dichiarata riuscita.
