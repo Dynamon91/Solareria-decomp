@@ -198,3 +198,23 @@ I tre oggetti legacy Time Dilation del gruppo 02 hanno gia il puntatore nullo ne
 Questa verifica riclassifica le 86 segnalazioni come baseline originale nel confronto aggregato; non dimostra una perdita introdotta dalla decompilazione. La corrispondenza individuale con i GUID e il comportamento nell'editor restano da convalidare. Restano inoltre i due GUID distinti segnalati dall'audit: nessun riferimento e stato inventato o riassegnato. Evidenza in [reports/script-source-provenance.json](reports/script-source-provenance.json).
 
 Aggiunti diagnostica della provenienza, dipendenza opzionale fissata e test per intestazioni corrotte, payload opachi, differenze di nomi/conteggi, ID a 64 bit, identita duplicate e processi di lettura falliti. La suite comprende ora **62 test**; i risultati multipiattaforma sono in Actions. Nessun asset originale o sorgente C# e stato modificato.
+
+
+### Devlog — progetto unico di integrazione
+
+Aggiunto `unity_merge.py`: riunisce i dieci export in un solo progetto candidato, conservando i GUID e i contenuti serializzati. Le risorse sono separate in `Assets/Recovered/<gruppo>`; i file StreamingAssets confluiscono nel percorso comune, con catalogo Addressables e banchi FMOD originali. Le DLL con GUID condiviso vengono deduplicate solo dopo confronto SHA-256 e confronto delle impostazioni di importazione; si ignora esclusivamente il timestamp `timeCreated` delle meta. Contenuti o importer diversi interrompono l'operazione prima della scrittura.
+
+```bash
+python unity_merge.py /percorso/Solateria_Recovery.zip /percorso/SolateriaUnity
+python manage.py verify-copy /percorso/SolateriaUnity
+python manage.py audit /percorso/SolateriaUnity
+```
+
+La destinazione deve essere nuova. In caso di interruzione resta una cartella `.partial` da conservare o rimuovere prima di ripetere; questo comando non supporta ancora la ripresa. Vengono selezionati Packages e ProjectSettings di Base e registrati nel manifesto gli altri file di configurazione esclusi. Le impostazioni specifiche dei bundle non vengono combinate automaticamente. I file di grandi dimensioni restano locali: su GitHub si pubblicano codice, procedura e rapporti, non diversi gigabyte di asset.
+
+La copia unica non equivale a un gioco funzionante: rimangono da verificare nell'editor i percorsi caricati per nome, eventuali nomi Resources/Shader condivisi, i plugin nativi, le scene iniziali e Addressables. Non sono stati inventati sostituti per i due GUID mancanti. L'editor Unity non e disponibile in questo ambiente; nessuna compilazione o esecuzione Unity viene dichiarata superata.
+
+
+Eseguita l'unione reale: **67.817 file, 7.969.884.496 byte**, con **1.314 copie duplicate escluse**, cinque rinomine gia previste e 162 file di configurazione secondari esclusi. Presenti **53 bundle, 6 banchi audio e 82 DLL uniche**. La verifica SHA-256 separata ha confermato tutti i 67.817 file, senza mancanti o alterati. L'audit del progetto unico ha controllato 27.185 YAML: zero GUID duplicati, collisioni di nomi o asset privi di meta; restano due GUID mancanti e gli 86 script nulli della baseline originale. Rapporto: [reports/unified-project-verification.json](reports/unified-project-verification.json).
+
+**Completamento verificato invariato: 60%.** L'unione dei file e completata, mentre integrazione nell'editor e gioco eseguibile non sono ancora convalidati. Superati **67 test locali** della pipeline; questo esito non certifica la compilazione Unity.

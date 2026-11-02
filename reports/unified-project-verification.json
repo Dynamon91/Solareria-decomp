@@ -1,0 +1,660 @@
+{
+  "schema_version": 1,
+  "state": "complete",
+  "kind": "integration_candidate",
+  "files_count": 67817,
+  "total_bytes": 7969884496,
+  "selected_settings_project": "Base",
+  "serialized_contents_changed": false,
+  "unity_editor_verified": false,
+  "runtime_verified": false,
+  "native_plugins_verified": false,
+  "deduplicated_files": 1314,
+  "skipped_settings_count": 162,
+  "renamed_asset_count": 5,
+  "verification": {
+    "verified_files": 67817,
+    "expected_files": 67817,
+    "missing_files": [],
+    "altered_files": [],
+    "ok": true,
+    "unity_editor_verified": false
+  },
+  "audit": {
+    "schema_version": 1,
+    "input_name": "unified-project",
+    "read_only": true,
+    "unity_editor_verified": false,
+    "summary": {
+      "yaml_files_scanned": 27185,
+      "non_yaml_files_skipped": 0,
+      "missing_local_guid_count": 2,
+      "external_guid_candidates_count": 0,
+      "duplicate_guid_count": 0,
+      "null_script_count": 86,
+      "referenced_null_script_asset_count": 1,
+      "assets_without_meta_count": 0,
+      "metadata_without_guid_count": 0,
+      "orphan_metadata_count": 0,
+      "case_conflict_count": 0,
+      "case_asset_conflict_count": 0,
+      "ignored_export_file_count": 46,
+      "projects_scanned": 1,
+      "unique_globally_missing_guids": 2,
+      "duplicate_archive_entries": 0
+    },
+    "projects": [
+      {
+        "project": ".",
+        "ignored_export_file_count": 46,
+        "case_asset_conflict_count": 0,
+        "yaml_files_scanned": 27185,
+        "non_yaml_files_skipped": 0,
+        "reference_occurrences": 415356,
+        "missing_local_guid_count": 2,
+        "missing_global_guid_count": 2,
+        "external_guid_candidates_count": 0,
+        "missing_local_guids": [
+          {
+            "guid": "0000000deadbeef15deadf00d0000000",
+            "occurrences": 232651,
+            "sample_assets": [
+              "Assets/Recovered/Shaders/Shader/Skeleton Lit Fill.mat",
+              "Assets/Recovered/Shaders/Shader/LUTBlendMaterial.mat",
+              "Assets/Recovered/Group_08/RuleTile/Platform_0.asset",
+              "Assets/Recovered/Group_08/RuleTile/Invisible.asset",
+              "Assets/Recovered/Group_08/RuleTile/Incline_1.asset"
+            ],
+            "candidate_provider_count": 0,
+            "candidate_providers": []
+          },
+          {
+            "guid": "bd7bad007f2987846bfcb8b3ad2c8f7b",
+            "occurrences": 2,
+            "sample_assets": [
+              "Assets/Recovered/Base/Resources/fonts & materials/LiberationSans SDF Material.mat",
+              "Assets/Recovered/Base/Resources/fonts & materials/LiberationSans SDF - Fallback.asset"
+            ],
+            "candidate_provider_count": 0,
+            "candidate_providers": []
+          }
+        ],
+        "duplicate_guid_count": 0,
+        "duplicate_guids": [],
+        "null_script_count": 86,
+        "null_script_samples": [
+          {
+            "asset": "Assets/Recovered/Base/Resources/FMODStudioSettingsPlatform_3.asset",
+            "count": 1,
+            "guid": "45edd7bea957ea7479c531fc7ae12a68",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_02/MonoBehaviour/Time Dilation Track_0.asset",
+            "count": 1,
+            "guid": "7b7e964a3c22bf94d95b05ce0cb8ac4b",
+            "incoming_local_guid_references": 1
+          },
+          {
+            "asset": "Assets/Recovered/Group_02/MonoBehaviour/TimeDilationPlayableAsset_0.asset",
+            "count": 1,
+            "guid": "0146a9b8b1d46114992dc536e503aa56",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_02/MonoBehaviour/TimeDilationPlayableAsset.asset",
+            "count": 1,
+            "guid": "d7d44e928d358e441a46aa07ef95644d",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_7.asset",
+            "count": 1,
+            "guid": "11cc8153a7e00cc44a2e30bcae239714",
+            "incoming_local_guid_references": 0
+          }
+        ],
+        "null_script_assets": [
+          {
+            "asset": "Assets/Recovered/Base/Resources/FMODStudioSettingsPlatform_3.asset",
+            "count": 1,
+            "guid": "45edd7bea957ea7479c531fc7ae12a68",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_02/MonoBehaviour/Time Dilation Track_0.asset",
+            "count": 1,
+            "guid": "7b7e964a3c22bf94d95b05ce0cb8ac4b",
+            "incoming_local_guid_references": 1
+          },
+          {
+            "asset": "Assets/Recovered/Group_02/MonoBehaviour/TimeDilationPlayableAsset_0.asset",
+            "count": 1,
+            "guid": "0146a9b8b1d46114992dc536e503aa56",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_02/MonoBehaviour/TimeDilationPlayableAsset.asset",
+            "count": 1,
+            "guid": "d7d44e928d358e441a46aa07ef95644d",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_7.asset",
+            "count": 1,
+            "guid": "11cc8153a7e00cc44a2e30bcae239714",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_76.asset",
+            "count": 1,
+            "guid": "8be218ad2733d744eabb502caafa7685",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_74.asset",
+            "count": 1,
+            "guid": "0f873551cfeb2cc4ca1b83ba5b1fb399",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_38.asset",
+            "count": 1,
+            "guid": "49cd052dae0c23648b5029cfcbd66dc5",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_48.asset",
+            "count": 1,
+            "guid": "553709d095ef49b4e8d9d9b6890a57d0",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_61.asset",
+            "count": 1,
+            "guid": "79873dc4e84a22b4bb417a7605c0993b",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_78.asset",
+            "count": 1,
+            "guid": "91931bd0c1a6faa4588f5802348deeec",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_40.asset",
+            "count": 1,
+            "guid": "ca0d455beb5426c4aa4e05bd7ee58470",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_31.asset",
+            "count": 1,
+            "guid": "207542c308cfc49498105e27f752617f",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_8.asset",
+            "count": 1,
+            "guid": "acca87a8c5b533d43b491eaaf89aa024",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_50.asset",
+            "count": 1,
+            "guid": "bc9d9f58944d5b24c8640ca5080bd9b2",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_51.asset",
+            "count": 1,
+            "guid": "ecb1d90b040caf940979bf1d8add0319",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_35.asset",
+            "count": 1,
+            "guid": "6c9480cc5c6b0d24a9ecea452f593b36",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_59.asset",
+            "count": 1,
+            "guid": "615855746ac09c646b6a34e61a76b1c8",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_18.asset",
+            "count": 1,
+            "guid": "4fa3b5873ff313c44802f23b8d7b07ca",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_62.asset",
+            "count": 1,
+            "guid": "7b94af64429eeea45bc01844a7028011",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_29.asset",
+            "count": 1,
+            "guid": "a4b12405efbf54e48836a15c5358eb3e",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_41.asset",
+            "count": 1,
+            "guid": "8d9387d1a13bafb4bb66b8f43d6bf195",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_79.asset",
+            "count": 1,
+            "guid": "48ba37d402c3ea049ba725163a03b279",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_49.asset",
+            "count": 1,
+            "guid": "7610d06eb485b084e832a54f44941780",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_64.asset",
+            "count": 1,
+            "guid": "cfd897a6425b8d147854d1cf7176c9c2",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_20.asset",
+            "count": 1,
+            "guid": "6945a7ddb934cb44491a54b2ba4ddc6b",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_70.asset",
+            "count": 1,
+            "guid": "d5f6f6cca516dc84c9afdfebf14af728",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_73.asset",
+            "count": 1,
+            "guid": "89521b0718584c242810b089f390bb3e",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_9.asset",
+            "count": 1,
+            "guid": "f4e266b2d02810e4b985355e49d90800",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_69.asset",
+            "count": 1,
+            "guid": "4dd0a1c2d1ae9f54e9b632f1bc07d4e0",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_37.asset",
+            "count": 1,
+            "guid": "205210ba1b464c143a2b0c15d93c40bb",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_15.asset",
+            "count": 1,
+            "guid": "ef13d64c8a5def84692b335d308df5c3",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_1.asset",
+            "count": 1,
+            "guid": "2e53816f02bc0764c9906b420088ed50",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_45.asset",
+            "count": 1,
+            "guid": "ac400c1c157d1214c9f14003589f57c3",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_5.asset",
+            "count": 1,
+            "guid": "4cf675c9010dfd148a7e32c14768e61d",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_36.asset",
+            "count": 1,
+            "guid": "6127db7039433b14e9f0c50b0f10e073",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_72.asset",
+            "count": 1,
+            "guid": "0149653a1f3f7b542b1d406256679b10",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_55.asset",
+            "count": 1,
+            "guid": "3ae10afc95679484eb724c6b83d475c8",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_33.asset",
+            "count": 1,
+            "guid": "8e47c7663624a2341a51c252f586a99e",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_24.asset",
+            "count": 1,
+            "guid": "c1648674b5557914ca4b4c0b4d50a18e",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_4.asset",
+            "count": 1,
+            "guid": "333e5c626849ef342a7b4214160b78ab",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_46.asset",
+            "count": 1,
+            "guid": "93379664cc57f9641a95e3e6bc02b5b6",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_71.asset",
+            "count": 1,
+            "guid": "50201facb732cb9479897ce8ee1192a6",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_3.asset",
+            "count": 1,
+            "guid": "ca5ede16f8b4b6746b5e30a5b26f097f",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_34.asset",
+            "count": 1,
+            "guid": "e1d9c169dc192514d816efd89148a9a0",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_80.asset",
+            "count": 1,
+            "guid": "3de6241b07a6470479b7875e7b5dcdf7",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_13.asset",
+            "count": 1,
+            "guid": "4eb3a474ac7ccf743b6940a27856cb06",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_75.asset",
+            "count": 1,
+            "guid": "1ca8ba473518211448db899fe4d07cc3",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_27.asset",
+            "count": 1,
+            "guid": "aa5c6aec7daa1b34b8d5dbb4334fbad3",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_58.asset",
+            "count": 1,
+            "guid": "e88e2e6dbe255d242beb561595b18e9b",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_21.asset",
+            "count": 1,
+            "guid": "e28005cc73218154da5a62cb08e1eae8",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_16.asset",
+            "count": 1,
+            "guid": "a6a85168899db6d49ae6fa1f3061d187",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_57.asset",
+            "count": 1,
+            "guid": "73beb9bf52408504eabd90ec98420254",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_19.asset",
+            "count": 1,
+            "guid": "d3768b61935e87d46a46c8a2cf4a0cab",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_11.asset",
+            "count": 1,
+            "guid": "83bb3b3c11a4ef84b9956563252cf063",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_30.asset",
+            "count": 1,
+            "guid": "922efa7929981dc449ef115d623d7dd5",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_65.asset",
+            "count": 1,
+            "guid": "29bc83d5c08f1824e94585a5e6773ddf",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_53.asset",
+            "count": 1,
+            "guid": "50cb1f18b2c9a7640b0423257b80abfd",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_54.asset",
+            "count": 1,
+            "guid": "2ba738ed18a758942b1ab3babfeda576",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_52.asset",
+            "count": 1,
+            "guid": "bd68c64b43fc7f94cb607efeff5dc4fd",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_17.asset",
+            "count": 1,
+            "guid": "11e4c7c66796e6d479e1cd0781dfffbb",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_26.asset",
+            "count": 1,
+            "guid": "de697ebe7f26e374cae28b18f0f8990a",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_47.asset",
+            "count": 1,
+            "guid": "0018cc327970b9747adb7f7c5ef49ccf",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_60.asset",
+            "count": 1,
+            "guid": "574d25082ab198d4e8097776e667e659",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_10.asset",
+            "count": 1,
+            "guid": "fcb299d35fb923e46bc1944761d65f68",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_39.asset",
+            "count": 1,
+            "guid": "fee0fe6d100d2a244802b7b2ade2ec2c",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_22.asset",
+            "count": 1,
+            "guid": "bc909d4fd66460a468b88172d8c1b038",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_14.asset",
+            "count": 1,
+            "guid": "663a738fcc1db8b48b688754cfea873d",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_67.asset",
+            "count": 1,
+            "guid": "3b4051f79ebbd9b43b52c817da739c58",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_44.asset",
+            "count": 1,
+            "guid": "c8f3269014f63864ba24cd918be1f375",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_68.asset",
+            "count": 1,
+            "guid": "8c71e3e707b188d4784561f6d3652fbb",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_28.asset",
+            "count": 1,
+            "guid": "749e9d1d2ccb5e749917fc1650ed82b7",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_42.asset",
+            "count": 1,
+            "guid": "da904f5c3d27872419642a3426aaf6d2",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_2.asset",
+            "count": 1,
+            "guid": "13992b84080957c40a00098d14d39d1a",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_43.asset",
+            "count": 1,
+            "guid": "f219dd1ed53d90141970a8d074f10b3d",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_12.asset",
+            "count": 1,
+            "guid": "4b4908daae530b34e83a8a826bfbd6d7",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_77.asset",
+            "count": 1,
+            "guid": "41b4452280bf43c42bed9b67beb52114",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_23.asset",
+            "count": 1,
+            "guid": "6f408061845681c4fa46a4e820a3ddf2",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_32.asset",
+            "count": 1,
+            "guid": "a5b4a22d2e0825a46abebc2d467fbbe0",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_6.asset",
+            "count": 1,
+            "guid": "e1e13d811cb1a65498bcb877a9fbfd53",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_56.asset",
+            "count": 1,
+            "guid": "2cd059e8847ac71468fbf289be9e2613",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_66.asset",
+            "count": 1,
+            "guid": "74708d6572e8e8346a22b07003fc0c8f",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_63.asset",
+            "count": 1,
+            "guid": "b48ccb2a6f744304fab9a61a5a036a00",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_0.asset",
+            "count": 1,
+            "guid": "e2b28075a4f1162489098b1651942946",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour_25.asset",
+            "count": 1,
+            "guid": "b3f42ef3f460bf646b5bdd4fa798b942",
+            "incoming_local_guid_references": 0
+          },
+          {
+            "asset": "Assets/Recovered/Group_03/MonoBehaviour/MonoBehaviour.asset",
+            "count": 1,
+            "guid": "2cba99ba65d66ea42add0f3eaa4c79fe",
+            "incoming_local_guid_references": 0
+          }
+        ],
+        "referenced_null_script_asset_count": 1,
+        "assets_without_meta_count": 0,
+        "assets_without_meta_samples": [],
+        "metadata_without_guid_count": 0,
+        "metadata_without_guid_samples": [],
+        "orphan_metadata_count": 0,
+        "orphan_metadata_samples": [],
+        "case_conflict_count": 0,
+        "case_conflict_samples": []
+      }
+    ],
+    "duplicate_archive_entry_samples": [],
+    "limitations": [
+      "GUID fields are scanned heuristically in YAML text; confirm suspicious references in Unity.",
+      "Static GUID matching does not validate fileID/sub-asset IDs, script layouts, importer settings or runtime behaviour.",
+      "Providers in other export projects are candidates only; no references or files are modified.",
+      "Zero references can be intentional; only null m_Script fields are separately flagged.",
+      "Non-YAML assets are counted as skipped, not treated as validated. No Unity build is performed."
+    ]
+  },
+  "content_inventory": {
+    "managed_dlls": 82,
+    "addressable_bundles": 53,
+    "fmod_banks": 6
+  }
+}
