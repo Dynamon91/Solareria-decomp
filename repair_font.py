@@ -47,7 +47,7 @@ def repair(project):
             temporary=backup/(target.name+'.new');shutil.copyfile(PATCH/target.name,temporary)
             os.replace(temporary,target);installed.append(target)
         for path in files:
-            temporary=backup/(path.name+'.new');temporary.write_text(path.read_text().replace(OLD,NEW),encoding='utf-8')
+            temporary=backup/(path.name+'.new');temporary.write_bytes(path.read_bytes().replace(OLD.encode('ascii'),NEW.encode('ascii')))
             os.replace(temporary,path);changed.append(path)
         report={'guid':GUID,'patched_references':2,'original_texture_path_id':'234',
                 'native_atlas_sha256':sha(targets[0]),'backup':str(backup),
