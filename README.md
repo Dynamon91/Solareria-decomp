@@ -237,3 +237,23 @@ Il controllo delle scene e una verifica limitata: non convalida automaticamente 
 Riferimenti API: [Unity 2022.3, argomenti Editor](https://docs.unity3d.com/2022.3/Documentation/Manual/EditorCommandLineArguments.html), [BuildPipeline.BuildPlayer](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/BuildPipeline.BuildPlayer.html).
 
 **75 test locali superati**, incluse prove simulate di timeout, report mancante o obsoleto, errore Unity e falso successo senza eseguibile. Non sono prove eseguite nell'editor: Unity non e installato nell'ambiente di lavoro. **Completamento verificato: 60%**, in attesa della verifica reale di integrazione e avvio.
+
+### Devlog — installazione reale di Unity
+
+Installati nell'ambiente di lavoro **Unity 2022.3.62f2** e il modulo **Windows Build Support (Mono)**, scaricati dai link ufficiali del changeset `7670c08855a9`. Verificati dimensioni e checksum MD5 dichiarati dall'API ufficiale e calcolati i rispettivi SHA-256. Il modulo contiene 817 file: estrazione con il nuovo lettore Python confrontata file per file con un'estrazione indipendente tramite libarchive, senza differenze di contenuto. Nessun binario dell'editor viene pubblicato su GitHub.
+
+Aggiunto `install_unity.py`, installatore riproducibile per **Linux x86_64, Python 3.12+**, con hash SHA-256 fissati, cache separata e destinazione nuova:
+
+```bash
+python3.12 install_unity.py /percorso/Unity-2022.3.62f2 --cache /percorso/cache-unity
+```
+
+L'installatore estrae gli archivi e il modulo Windows; non attiva la licenza. Un'interruzione conserva la cartella `.partial`; prima di ripetere occorre conservarla o rimuoverla. La prima installazione richiede circa 4,4 GB di download oltre allo spazio di estrazione. La cache consente di evitare un nuovo download degli archivi completi e verificati.
+
+Eseguito realmente `Unity -version`: risposta **2022.3.62f2**. Compilato `SolateriaRecoveryBuild.cs` con Roslyn/Mono e le librerie dell'editor appena installato: **zero errori**, codice di uscita 0. Questa compilazione conferma la compatibilita API dello strumento, non l'importazione del gioco o una build del gioco.
+
+Il tentativo batch di creare un progetto minimo termina con **codice 199** e `IPC channel to LicensingClient doesn't exist; aborting`. La licenza rimane non verificata. L'avvio del client licenze e stato inoltre bloccato dal controllo automatico di autorizzazione perche puo trasmettere identificativi del computer e dati di licenza a `license.unity3d.com`: nessun aggiramento di questo blocco viene applicato. Per proseguire con tale servizio serve autorizzazione esplicita; l'eventuale attivazione deve usare una licenza valida tramite Unity Hub, senza condividere password nel repository o nella chat.
+
+Fonti: [release ufficiale](https://unity.com/releases/editor/whats-new/2022.3.62f2), [metadati ufficiali di download](https://services.api.unity.com/unity/editor/release/v1/releases?version=2022.3.62f2). Evidenza sintetica, priva di identificativi del computer: [reports/unity-environment-verification.json](reports/unity-environment-verification.json).
+
+**80 test locali superati. Completamento verificato: 60%.** L'editor ora e installato e gli strumenti compilano; importazione del gioco, integrazione delle risorse, compilazione del player e partita restano da convalidare dopo lo sblocco della licenza.

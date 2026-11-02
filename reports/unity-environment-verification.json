@@ -1,0 +1,25 @@
+{
+  "editor_version": "2022.3.62f2",
+  "version_command_verified": true,
+  "windows_module_files": 817,
+  "editor_tooling_compiled": true,
+  "license_verified": false,
+  "game_project_imported": false,
+  "game_build_verified": false,
+  "runtime_verified": false,
+  "probe_exit_code": 199,
+  "probe_outcome": "license_ipc_unavailable",
+  "elapsed_seconds": 0.7,
+  "probe_with_client_exit_code": 199,
+  "probe_with_client_outcome": "license_check_failed",
+  "license_client_authorization_blocked": true,
+  "archive_integrity": {
+    "editor_sha256": "01e7f6588f98a94e5d48bf6ea1ce9574eae21d6a6261d26b60960cc4d723541f",
+    "editor_md5": "7dffabdd28d7f2e5d5f2f1f8f2323d21"
+  },
+  "windows_module_sha256": "d55cda08689d03e55cc11e12cdfebf25ff1e05af2c16e01336535fd79ec40a74",
+  "windows_module_independent_comparison_files": 817,
+  "editor_tooling_compiler_exit_code": 0,
+  "editor_tooling_source_sha256": "381de3f8beec3539cd5524c17d2f6e58c9a211babefa531a8ea5d678c1a3f3f4",
+  "python_tests_passed": 80
+}
