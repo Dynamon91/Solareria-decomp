@@ -1,0 +1,30 @@
+[
+  {
+    "assembly": "Assembly-CSharp-firstpass",
+    "build_exit_code": 0,
+    "compiled_output_exists": true,
+    "output_bytes": 15360,
+    "errors": 0
+  },
+  {
+    "assembly": "StaticData",
+    "build_exit_code": 0,
+    "compiled_output_exists": true,
+    "output_bytes": 70144,
+    "errors": 0
+  },
+  {
+    "assembly": "Core",
+    "build_exit_code": 0,
+    "compiled_output_exists": true,
+    "output_bytes": 3052544,
+    "errors": 0
+  },
+  {
+    "assembly": "Assembly-CSharp",
+    "build_exit_code": 0,
+    "compiled_output_exists": true,
+    "output_bytes": 310272,
+    "errors": 0
+  }
+]

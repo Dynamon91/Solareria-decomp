@@ -1,0 +1,30 @@
+[
+  {
+    "assembly": "Assembly-CSharp",
+    "exit_code": 0,
+    "cs_files": 72,
+    "lines": 20255,
+    "empty_files": 0
+  },
+  {
+    "assembly": "Assembly-CSharp-firstpass",
+    "exit_code": 0,
+    "cs_files": 11,
+    "lines": 574,
+    "empty_files": 0
+  },
+  {
+    "assembly": "Core",
+    "exit_code": 0,
+    "cs_files": 1419,
+    "lines": 150554,
+    "empty_files": 0
+  },
+  {
+    "assembly": "StaticData",
+    "exit_code": 0,
+    "cs_files": 65,
+    "lines": 2299,
+    "empty_files": 0
+  }
+]

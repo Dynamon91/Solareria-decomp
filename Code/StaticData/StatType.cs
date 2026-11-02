@@ -1,0 +1,28 @@
+public enum StatType
+{
+	None,
+	Level,
+	Exp,
+	Inflare,
+	Ohn,
+	WarmhornCount,
+	WarmhornHealAmount,
+	Warmth,
+	Stamina,
+	StaminaRegain,
+	Attack,
+	GuardDamage,
+	Defense,
+	CollectingPower,
+	GroggyAttack,
+	FireAttack,
+	CounterAttack,
+	GuardStamina,
+	ShieldMaximum,
+	ResidualHeal,
+	ResidualRate,
+	ParryGroggy,
+	GoodsProtection,
+	CollectingRange,
+	Max
+}

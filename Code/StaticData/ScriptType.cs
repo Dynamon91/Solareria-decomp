@@ -1,0 +1,19 @@
+public enum ScriptType
+{
+	Anim,
+	Talk,
+	Choice,
+	Move,
+	Special,
+	Cutscene,
+	Jump,
+	Chat,
+	Delay,
+	Item,
+	Choice_NotiForced,
+	Choice_NotiNewChat,
+	Choice_DoNotRemove,
+	Narration,
+	Sound,
+	ScenarioInfo
+}

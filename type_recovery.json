@@ -1,0 +1,98 @@
+[
+  {
+    "file": "Code/Core/PlayerStateMachine.cs",
+    "type": "PlayerStateMachine",
+    "exit": 0,
+    "bytes": 16020
+  },
+  {
+    "file": "Code/Core/PlayerController.cs",
+    "type": "PlayerController",
+    "exit": 0,
+    "bytes": 17313
+  },
+  {
+    "file": "Code/Core/PlayerMover.cs",
+    "type": "PlayerMover",
+    "exit": 0,
+    "bytes": 44837
+  },
+  {
+    "file": "Code/Core/SPR/DarkChasaCutsceneProducer.cs",
+    "type": "SPR.DarkChasaCutsceneProducer",
+    "exit": 0,
+    "bytes": 16012
+  },
+  {
+    "file": "Code/Core/SPR/BaranCutsceneProducer.cs",
+    "type": "SPR.BaranCutsceneProducer",
+    "exit": 0,
+    "bytes": 13329
+  },
+  {
+    "file": "Code/Core/SPR/Haechi.cs",
+    "type": "SPR.Haechi",
+    "exit": 0,
+    "bytes": 4486
+  },
+  {
+    "file": "Code/Core/SPR/Enemy.cs",
+    "type": "SPR.Enemy",
+    "exit": 0,
+    "bytes": 27112
+  },
+  {
+    "file": "Code/Core/SPR/Npc.cs",
+    "type": "SPR.Npc",
+    "exit": 0,
+    "bytes": 11189
+  },
+  {
+    "file": "Code/Core/SPR/EnemyWave.cs",
+    "type": "SPR.EnemyWave",
+    "exit": 0,
+    "bytes": 9460
+  },
+  {
+    "file": "Code/Core/Priority_Queue/GenericPriorityQueue.cs",
+    "type": "Priority_Queue.GenericPriorityQueue",
+    "exit": 70,
+    "bytes": 0
+  },
+  {
+    "file": "Code/Core/SPR/UI/HpSlider.cs",
+    "type": "SPR.UI.HpSlider",
+    "exit": 0,
+    "bytes": 10797
+  },
+  {
+    "file": "Code/Core/SPR/UI/Map/MiniMapGeneratingInfo.cs",
+    "type": "SPR.UI.Map.MiniMapGeneratingInfo",
+    "exit": 0,
+    "bytes": 9144
+  },
+  {
+    "file": "Code/Core/SPR/UI/Map/MapCollection.cs",
+    "type": "SPR.UI.Map.MapCollection",
+    "exit": 0,
+    "bytes": 10075
+  },
+  {
+    "file": "Code/Core/SPR/UI/Trait/MenuTraitPanel.cs",
+    "type": "SPR.UI.Trait.MenuTraitPanel",
+    "exit": 0,
+    "bytes": 10127
+  },
+  {
+    "file": "Code/Core/SPR/UI/Menu/MenuCanvas.cs",
+    "type": "SPR.UI.Menu.MenuCanvas",
+    "exit": 0,
+    "bytes": 3727
+  },
+  {
+    "file": "Code/StaticData/UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs",
+    "type": "UnitySourceGeneratedAssemblyMonoScriptTypes_v1",
+    "exit": 0,
+    "bytes": 17115
+  }
+]

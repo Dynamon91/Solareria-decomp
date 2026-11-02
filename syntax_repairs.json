@@ -1,0 +1,22 @@
+[
+  {
+    "file": "Code/Core/SPR/Entrance.cs",
+    "change": "Reconstructed explicit interface property accessor from get_gameObject method."
+  },
+  {
+    "file": "Code/Core/SPR/Field/GiantElevator.cs",
+    "change": "Reconstructed explicit interface property accessor from get_gameObject method."
+  },
+  {
+    "file": "Code/Core/SPR/Field/Portal.cs",
+    "change": "Reconstructed explicit interface property accessor from get_gameObject method."
+  },
+  {
+    "file": "Code/Core/SPR/Field/OneWayEntrance.cs",
+    "change": "Reconstructed explicit interface property accessor from get_gameObject method."
+  },
+  {
+    "file": "Code/Core/Library/DoTweenExtension.cs",
+    "change": "Restore namespace import for Spine Skeleton color extension methods."
+  }
+]

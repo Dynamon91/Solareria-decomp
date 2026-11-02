@@ -1,0 +1,20 @@
+# Local original files and generated data
+/References/
+/.local/
+**/bin/
+**/obj/
+/Library/
+/Temp/
+/Logs/
+/UserSettings/
+__pycache__/
+*.pyc
+*.dll
+*.pdb
+*.exe
+*.bank
+*.bundle
+*.rar*
+*.zip*
+*.resS
+*.resource

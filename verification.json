@@ -1,0 +1,18 @@
+{
+  "source_cs_files": 1567,
+  "source_build_passed": true,
+  "fresh_decompilation_build_passed": true,
+  "warnings_present": true,
+  "fresh_source_empty_files": 0,
+  "decompile_and_build_max_single_process_rss_mib": 540.6,
+  "animation_export_files": 535,
+  "animation_max_single_process_rss_mib": 1016.8,
+  "font_export_files": 197,
+  "font_max_single_process_rss_mib": 959.7,
+  "font_deduplicated_dll_bytes": 38548480,
+  "resume_verified": true,
+  "all_assets_retested": false,
+  "unity_editor_tested": false,
+  "github_uploaded": true,
+  "github_repository": "Dynamon91/Solareria-decomp"
+}

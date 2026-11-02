@@ -1,0 +1,22 @@
+public enum TriggerType
+{
+	None,
+	Never,
+	Talk,
+	InteractCount,
+	InteractField,
+	VisitArea,
+	CurrentArea,
+	Item,
+	FightCount,
+	Trigger,
+	Trait,
+	Store,
+	Sales,
+	Cutscene,
+	SameAnimation,
+	IsRested,
+	IsBossCleared,
+	Object,
+	Donation
+}

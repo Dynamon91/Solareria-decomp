@@ -1,0 +1,12 @@
+<Project DefaultTargets="Build">
+  <PropertyGroup><RecoveryRoot Condition="'$(RecoveryRoot)' == ''">$(MSBuildThisFileDirectory)</RecoveryRoot></PropertyGroup>
+  <ItemGroup>
+    <RecoveredProject Include="$(RecoveryRoot)/Code/Assembly-CSharp-firstpass/Assembly-CSharp-firstpass.csproj" />
+    <RecoveredProject Include="$(RecoveryRoot)/Code/StaticData/StaticData.csproj" />
+    <RecoveredProject Include="$(RecoveryRoot)/Code/Core/Core.csproj" />
+    <RecoveredProject Include="$(RecoveryRoot)/Code/Assembly-CSharp/Assembly-CSharp.csproj" />
+  </ItemGroup>
+  <Target Name="Build">
+    <MSBuild Projects="@(RecoveredProject)" Targets="Restore;Build" BuildInParallel="false" Properties="RestoreConfigFile=$(RecoveryRoot)/NuGet.Config;UseSharedCompilation=false" />
+  </Target>
+</Project>

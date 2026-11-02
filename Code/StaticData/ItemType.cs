@@ -1,0 +1,26 @@
+public enum ItemType
+{
+	None,
+	Inflare,
+	Ingredient,
+	CoreStone,
+	Food,
+	Heat,
+	Material,
+	Gem,
+	InfoStone,
+	Part,
+	MapMarker,
+	Relic,
+	Wristband,
+	Note,
+	Collectable,
+	PlagueSprout,
+	SpiritFlame,
+	CookingLog,
+	GuardianStone,
+	LongNote,
+	MemoryFragmentInfo,
+	ScenarioInfo,
+	Warmhorn
+}
