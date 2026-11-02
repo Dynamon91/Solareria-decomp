@@ -266,3 +266,12 @@ Ricevuta autorizzazione esplicita all'avvio del client licenze e al relativo inv
 Il tentativo diagnostico successivo e stato bloccato dal controllo automatico per un'ulteriore destinazione CDP di telemetria, ritenuta fuori dall'autorizzazione gia concessa. Nessun nuovo tentativo di egress o aggiramento viene applicato. Occorre autorizzare separatamente tale telemetria oppure eseguire il runner in un ambiente Unity gia attivato e funzionante. Evidenza sintetica: [reports/unity-license-check.json](reports/unity-license-check.json).
 
 **Completamento verificato: 60%.** Nessuna build o partita dichiarata riuscita.
+
+
+### Devlog — causa confermata del blocco IPC
+
+Autorizzata anche la telemetria aggiuntiva del client. La prova locale di creazione di un socket Unix termina con `PermissionError: [Errno 1] Operation not permitted`: il limite e nell'ambiente di esecuzione, prima della connessione al servizio licenze. Un tentativo di tracing non ha prodotto una traccia utilizzabile. Non e quindi corretto attribuire il solo errore 199 a una licenza assente o richiedere altre autorizzazioni per sbloccare questo limite.
+
+Nessun aggiramento delle restrizioni IPC viene applicato. Per la verifica effettiva serve eseguire gli strumenti gia pubblicati su un sistema che consenta IPC locale, con Unity 2022.3.62f2 attivato tramite Hub. Le autorizzazioni all'avvio del client e alla telemetria sono gia state ricevute. Evidenza: [reports/unity-ipc-blocker.json](reports/unity-ipc-blocker.json).
+
+**Completamento verificato: 60%.** Editor e modulo Windows installati, strumenti Editor compilati; importazione, build del gioco e partita non ancora verificate.

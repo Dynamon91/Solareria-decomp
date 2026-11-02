@@ -1,0 +1,9 @@
+{
+  "licensing_authorized": true,
+  "additional_telemetry_authorized": true,
+  "local_unix_socket_creation": "PermissionError: [Errno 1] Operation not permitted",
+  "blocker": "execution_environment_disallows_local_ipc",
+  "license_verified": false,
+  "game_build_verified": false,
+  "runtime_verified": false
+}
