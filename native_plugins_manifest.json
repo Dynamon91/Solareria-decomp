@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Rewired_DirectInput.dll",
+    "bytes": 12800,
+    "sha256": "9989b282d43621259160954f3c2191afc3e3a13adb0091c3f60be228831858ad"
+  },
+  {
+    "name": "Rewired_WindowsGamingInput.dll",
+    "bytes": 153088,
+    "sha256": "946478c5e8f61cbe75c6d70e3aabe2766126605cba45ddb579a5ef38fb198e98"
+  },
+  {
+    "name": "fmodstudio.dll",
+    "bytes": 3161600,
+    "sha256": "44f7f502b39b9c6219e2d0c3d787f752bfa944b95647f55752a04f6cfece875d"
+  },
+  {
+    "name": "resonanceaudio.dll",
+    "bytes": 816640,
+    "sha256": "e1667e5336ae067ab1d9aa04e7bcca9789ff5573ed4c7f6fa9305404d0485f99"
+  }
+]

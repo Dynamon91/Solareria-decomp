@@ -1,0 +1,45 @@
+{
+  "installed_plugins": [
+    {
+      "bytes": 12800,
+      "sha256": "9989b282d43621259160954f3c2191afc3e3a13adb0091c3f60be228831858ad",
+      "machine": "AMD64",
+      "managed": false,
+      "name": "Rewired_DirectInput.dll"
+    },
+    {
+      "bytes": 153088,
+      "sha256": "946478c5e8f61cbe75c6d70e3aabe2766126605cba45ddb579a5ef38fb198e98",
+      "machine": "AMD64",
+      "managed": false,
+      "name": "Rewired_WindowsGamingInput.dll"
+    },
+    {
+      "bytes": 3161600,
+      "sha256": "44f7f502b39b9c6219e2d0c3d787f752bfa944b95647f55752a04f6cfece875d",
+      "machine": "AMD64",
+      "managed": false,
+      "name": "fmodstudio.dll"
+    },
+    {
+      "bytes": 816640,
+      "sha256": "e1667e5336ae067ab1d9aa04e7bcca9789ff5573ed4c7f6fa9305404d0485f99",
+      "machine": "AMD64",
+      "managed": false,
+      "name": "resonanceaudio.dll"
+    }
+  ],
+  "target": "Assets/RecoveryNativePlugins/x86_64",
+  "source_bytes_unchanged": true,
+  "platform": "Windows x64",
+  "native_runtime_verified": false,
+  "unity_editor_verified": false,
+  "scope": "real original native DLLs installed into a minimal asset fixture; not the complete game project",
+  "editor_tooling_compile_exit_code": 0,
+  "editor_tooling_source_sha256": "0e8a501ab3546f8e04fd901106c173b4255b3e67e2482a69daf9657c1a27df06",
+  "unit_tests_passed": 90,
+  "directinput_external_runtime_imports": [
+    "VCRUNTIME140.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll"
+  ]
+}

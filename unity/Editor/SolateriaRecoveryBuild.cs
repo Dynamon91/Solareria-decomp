@@ -18,6 +18,25 @@ public static class SolateriaRecoveryBuild
         public string[] scenes; public string[] errors; public string buildResult;
         public long missingSceneScripts;
     }
+    static void CheckNativePlugins()
+    {
+        string[] names = { "fmodstudio.dll", "resonanceaudio.dll", "Rewired_DirectInput.dll", "Rewired_WindowsGamingInput.dll" };
+        foreach (string name in names) {
+            string path = "Assets/RecoveryNativePlugins/x86_64/" + name;
+            var importer = AssetImporter.GetAtPath(path) as PluginImporter;
+            if (importer == null) throw new Exception("Native plugin missing: " + path + "; run native_plugins.py");
+            importer.SetCompatibleWithAnyPlatform(false);
+            importer.SetCompatibleWithEditor(true);
+            importer.SetEditorData("CPU", "x86_64");
+            importer.SetEditorData("OS", "Windows");
+            importer.SetCompatibleWithPlatform(BuildTarget.StandaloneWindows64, true);
+            importer.SetCompatibleWithPlatform(BuildTarget.StandaloneWindows, false);
+            importer.SetCompatibleWithPlatform(BuildTarget.StandaloneLinux64, false);
+            importer.SetCompatibleWithPlatform(BuildTarget.StandaloneOSX, false);
+            importer.SetPlatformData(BuildTarget.StandaloneWindows64, "CPU", "x86_64");
+            importer.SaveAndReimport();
+        }
+    }
     public static void Run()
     {
         Request request = null;
@@ -52,6 +71,7 @@ public static class SolateriaRecoveryBuild
             if (result.missingSceneScripts > 0) throw new Exception("Missing component scripts in build scenes: " + result.missingSceneScripts);
             result.unity_editor_verified = true;
             if (request.mode == "build") {
+                CheckNativePlugins();
                 if (EditorUserBuildSettings.activeBuildTarget != BuildTarget.StandaloneWindows64) throw new Exception("Expected Windows64 target");
                 var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions {
                     scenes = scenes.ToArray(), locationPathName = request.output,

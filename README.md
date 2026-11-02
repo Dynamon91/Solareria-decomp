@@ -299,3 +299,21 @@ Il ripristino rifiuta DLL o meta successivamente modificate dall'utente. `verify
 **Verifica reale eseguita:** ricompilate le quattro DLL con SDK 8.0.100, zero errori; stage completo di quattro file prodotto con codice di uscita 0. Il confronto metadata conferma per tutti e quattro gli assembly la stessa identita e nessun nome di tipo o campo non generato mancante. Il verificatore non confronta firme dei campi, layout serializzato, codice generato o comportamento: non e una prova di compatibilita completa dei salvataggi o del runtime. Restano warning di compilazione nei sorgenti recuperati.
 
 Superati **86 test locali**, incluse transazioni con errore dopo la prima sostituzione, rollback, stage corrotto, DLL duplicate e meta modificate. L'applicazione al progetto completo e l'avvio in Unity non sono ancora verificati per il blocco IPC gia documentato. Evidenze: [reports/unity-code-staging.json](reports/unity-code-staging.json) e [reports/rebuilt-assembly-names.json](reports/rebuilt-assembly-names.json). **Completamento verificato: 60%.**
+
+### Devlog — plugin nativi di audio e controller
+
+Recuperati dai file originali **fmodstudio.dll, resonanceaudio.dll, Rewired_DirectInput.dll e Rewired_WindowsGamingInput.dll**. Verificati header PE Windows AMD64, assenza di directory CLR e SHA-256. I quattro binari restano locali e non vengono pubblicati su GitHub; [native_plugins_manifest.json](native_plugins_manifest.json) contiene soltanto dimensioni e hash attesi.
+
+Aggiunto `native_plugins.py`: copia le quattro DLL originali nella nuova cartella `Assets/RecoveryNativePlugins/x86_64`, con meta dedicate a **player Windows64 ed editor Windows x64**. La procedura rifiuta hash differenti, file managed, architetture errate, cartelle gia presenti e plugin omonimi in Assets. Le copie vengono ricontrollate prima della rinomina finale della cartella. Non modifica plugin o meta gia presenti.
+
+```bash
+python native_plugins.py /percorso/SolateriaUnity /percorso/GiocoOriginale/Solateria_Data/Plugins/x86_64
+```
+
+Il secondo percorso deve contenere le quattro DLL originali con gli hash indicati nel manifesto. Eseguire con Unity chiuso, dopo la creazione del progetto unico e prima della build. Il comando non preleva binari da siti esterni e non sostituisce librerie della piattaforma Steam.
+
+Il controllo Editor della build verifica ora la presenza dei quattro PluginImporter e applica esplicitamente CPU x86_64 e OS Windows, disabilitando Windows32, Linux e macOS. Compilato realmente lo script aggiornato con Roslyn/Mono e le API di Unity 2022.3.62f2: **zero errori**. Le impostazioni delle nuove meta devono comunque essere convalidate da un'importazione reale nell'editor. Se il runner segnala una versione precedente della sua cartella strumenti, conservarla **fuori da Assets e dal progetto** prima di reinstallarla, per evitare definizioni Editor duplicate.
+
+Analizzati anche gli import nativi: Rewired_DirectInput dipende da `VCRUNTIME140.dll` e dal runtime C universale di Windows. Sul sistema di prova Windows va quindi verificata la disponibilita del [Visual C++ Redistributable x64 ufficiale](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist). Le DLL di sistema non vengono raccolte o ridistribuite con gli asset. Riferimento API: [PluginImporter.SetEditorData](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/PluginImporter.SetEditorData.html).
+
+Eseguita una copia reale dei quattro plugin in un progetto minimo di prova: byte originali preservati e quattro meta create. Questo verifica la procedura sui binari effettivi, **non** l'importazione del gioco completo o il funzionamento di audio e controller. Evidenza: [reports/native-plugins-verification.json](reports/native-plugins-verification.json). Superati **90 test locali**, compresi rifiuto di file corrotti, DLL managed, architettura errata e duplicati. **Completamento verificato: 60%**; integrazione nell'editor e partita restano da convalidare nell'ambiente senza il blocco IPC.
