@@ -218,3 +218,22 @@ La copia unica non equivale a un gioco funzionante: rimangono da verificare nell
 Eseguita l'unione reale: **67.817 file, 7.969.884.496 byte**, con **1.314 copie duplicate escluse**, cinque rinomine gia previste e 162 file di configurazione secondari esclusi. Presenti **53 bundle, 6 banchi audio e 82 DLL uniche**. La verifica SHA-256 separata ha confermato tutti i 67.817 file, senza mancanti o alterati. L'audit del progetto unico ha controllato 27.185 YAML: zero GUID duplicati, collisioni di nomi o asset privi di meta; restano due GUID mancanti e gli 86 script nulli della baseline originale. Rapporto: [reports/unified-project-verification.json](reports/unified-project-verification.json).
 
 **Completamento verificato invariato: 60%.** L'unione dei file e completata, mentre integrazione nell'editor e gioco eseguibile non sono ancora convalidati. Superati **67 test locali** della pipeline; questo esito non certifica la compilazione Unity.
+
+### Devlog — controllo scene e build Windows
+
+Aggiunti `unity_runner.py` e il relativo script Editor. Il comando installa gli strumenti nel progetto locale, apre le scene configurate nell'ordine originale e risolve i loro GUID dopo lo spostamento in `Assets/Recovered`. Se non e disponibile una scena iniziale valida, si arresta e consente di indicare esplicitamente le scene con `--scene`. Nessuna scena fittizia viene creata e le scene originali non vengono salvate o riscritte dal controllo.
+
+```bash
+python unity_runner.py /percorso/SolateriaUnity --unity "/percorso/Unity2022.3.62f2/Editor/Unity.exe"
+python unity_runner.py /percorso/SolateriaUnity --unity "/percorso/Unity2022.3.62f2/Editor/Unity.exe" --mode build --output /percorso/nuova-build/Solateria.exe
+```
+
+Se necessario, aggiungere `--scene Assets/Recovered/Base/.../Start.unity` con il percorso reale; ripetere l'opzione nell'ordine di avvio per le altre scene. L'editor deve essere **Unity 2022.3.62f2**, con licenza valida e modulo Windows Build Support. Il progetto deve essere chiuso e la cartella di output della build nuova. La build generata e una development build Windows64 per diagnosticare gli errori prima della distribuzione.
+
+Il controllo segnala scene assenti e componenti MonoBehaviour mancanti nelle scene di build. Per questo controllo non vengono cancellati o riassegnati gli 86 record nulli di baseline. Per ogni esecuzione vengono conservati richiesta, log del processo, log Editor e rapporto JSON in `RecoveryLogs/<identificatore>`. Un codice di uscita zero senza rapporto coerente non conta come successo. Il timeout e configurabile con `--timeout`; compilazioni interrotte, errori di licenza, rapporti mancanti o un eseguibile finale assente restano fallimenti. Le cartelle strumenti esistenti e modificate non vengono sovrascritte.
+
+Il controllo delle scene e una verifica limitata: non convalida automaticamente tutti i prefab, i caricamenti Addressables, i plugin FMOD/Rewired o una partita. Anche una build riuscita mantiene `runtime_verified: false` finche non viene eseguita e provata. I due GUID irrisolti non sono stati sostituiti con risorse arbitrarie.
+
+Riferimenti API: [Unity 2022.3, argomenti Editor](https://docs.unity3d.com/2022.3/Documentation/Manual/EditorCommandLineArguments.html), [BuildPipeline.BuildPlayer](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/BuildPipeline.BuildPlayer.html).
+
+**75 test locali superati**, incluse prove simulate di timeout, report mancante o obsoleto, errore Unity e falso successo senza eseguibile. Non sono prove eseguite nell'editor: Unity non e installato nell'ambiente di lavoro. **Completamento verificato: 60%**, in attesa della verifica reale di integrazione e avvio.
