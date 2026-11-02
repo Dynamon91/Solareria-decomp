@@ -236,7 +236,7 @@ class PipelineTests(unittest.TestCase):
         with patch.object(m.subprocess, 'run') as run:
             m.build(str(self.tool), self.root)
             command = run.call_args.args[0]
-            self.assertIn('-p:RecoveryRoot='+str(self.root), command)
+            self.assertIn('-p:RecoveryRoot='+str(self.root.resolve()), command)
             self.assertIn('-m:1', command)
             (self.root/'References/Extra.dll').write_bytes(b'corrupt')
             with self.assertRaisesRegex(ValueError, 'Extra.dll'): m.build(str(self.tool), self.root)
