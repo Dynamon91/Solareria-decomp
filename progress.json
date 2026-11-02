@@ -29,7 +29,7 @@
       "title": "Integrazione delle risorse in Unity",
       "weight_percent": 20,
       "verified_percent": 0,
-      "evidence": "Copia di lavoro verificata: 69.284 file e cinque conflitti di nomi corretti; restano script, GUID e convalida nell'editor."
+      "evidence": "Copia verificata e cinque conflitti di nomi corretti. Gli 86 script nulli corrispondono alla baseline originale per conteggi e nomi; restano GUID, associazioni individuali e convalida Unity."
     },
     {
       "id": "playable",

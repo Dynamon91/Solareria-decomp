@@ -1,0 +1,1594 @@
+{
+  "schema_version": 1,
+  "read_only": true,
+  "unitypy_version": "1.25.4",
+  "source_files_read": 14,
+  "source_nulls": 86,
+  "export_nulls": 86,
+  "name_multisets_equal_in_each_scope": true,
+  "opaque_payload_bytes_in_null_objects": 0,
+  "individual_export_guid_mapping_verified": false,
+  "unity_editor_verified": false,
+  "scopes": [
+    {
+      "scope": "base",
+      "comparison": {
+        "status": "nulls_already_present_in_source_headers",
+        "source_null_count": 1,
+        "export_null_count": 1,
+        "name_multisets_equal": true,
+        "source_opaque_payload_bytes": 0,
+        "header_only_baseline_confirmed": true,
+        "individual_export_identity_mapping_verified": false,
+        "source_null_names": {
+          "FMODStudioSettingsPlatform": 1
+        },
+        "export_null_names": {
+          "FMODStudioSettingsPlatform": 1
+        },
+        "unity_editor_verified": false
+      },
+      "sources": [
+        {
+          "mono_behaviours_read": 15,
+          "source_name": "globalgamemanagers.assets",
+          "source_bytes": 1362860,
+          "source_sha256": "c667a4cfced768382a9d3eb9df1c5334f0fa5e46bd00adfa42b392308e288270",
+          "unitypy_version": "1.25.4",
+          "null_script_count": 0,
+          "reader_errors": 0
+        },
+        {
+          "mono_behaviours_read": 602,
+          "source_name": "resources.assets",
+          "source_bytes": 31909728,
+          "source_sha256": "8e1632dde8d2561a3d6017581bbb41a61d179c6a106d002bc89d11c31e99377a",
+          "unitypy_version": "1.25.4",
+          "null_script_count": 1,
+          "reader_errors": 0
+        }
+      ],
+      "original_null_objects": [
+        {
+          "collection": "resources.assets",
+          "path_id": "2020",
+          "name": "FMODStudioSettingsPlatform",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 60,
+          "header_bytes": 60,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "6142bfdfa30eead732d3bcd4380232e5f71c43bee00559ec0158e6b44ef889b9"
+        }
+      ],
+      "exported_null_assets": [
+        {
+          "asset": "Assets/Resources/FMODStudioSettingsPlatform_3.asset",
+          "name": "FMODStudioSettingsPlatform"
+        }
+      ]
+    },
+    {
+      "scope": "group02",
+      "comparison": {
+        "status": "nulls_already_present_in_source_headers",
+        "source_null_count": 3,
+        "export_null_count": 3,
+        "name_multisets_equal": true,
+        "source_opaque_payload_bytes": 0,
+        "header_only_baseline_confirmed": true,
+        "individual_export_identity_mapping_verified": false,
+        "source_null_names": {
+          "Time Dilation Track": 1,
+          "TimeDilationPlayableAsset": 2
+        },
+        "export_null_names": {
+          "Time Dilation Track": 1,
+          "TimeDilationPlayableAsset": 2
+        },
+        "unity_editor_verified": false
+      },
+      "sources": [
+        {
+          "mono_behaviours_read": 0,
+          "source_name": "portrait_character_assets_all.bundle",
+          "source_bytes": 981183,
+          "source_sha256": "49954d7f27c4754d06e796d1d522e127aae06ebfe972795e09f1ebd6af88061a",
+          "unitypy_version": "1.25.4",
+          "null_script_count": 0,
+          "reader_errors": 0
+        },
+        {
+          "mono_behaviours_read": 4764,
+          "source_name": "scene_ashhills_scenes_all.bundle",
+          "source_bytes": 68063924,
+          "source_sha256": "7b4aaca87517e9f88a9a797341abd3feef7dcc72bfef50a168b8a30fb03cb5bd",
+          "unitypy_version": "1.25.4",
+          "null_script_count": 3,
+          "reader_errors": 0
+        },
+        {
+          "mono_behaviours_read": 0,
+          "source_name": "spriteatlas_assets_all_f713da567a5d689c5884559440a1eefe.bundle",
+          "source_bytes": 171895706,
+          "source_sha256": "7a8e6e92fa779c94f98ae7e19e0e885569251396eeab76e3ec7c5302e2a7ae14",
+          "unitypy_version": "1.25.4",
+          "null_script_count": 0,
+          "reader_errors": 0
+        },
+        {
+          "mono_behaviours_read": 0,
+          "source_name": "statusicon_assets_all.bundle",
+          "source_bytes": 15235,
+          "source_sha256": "e3434f84c010c28c9112e1003d3c857cf89a7812d5ee0835906d5c74ac34fd4f",
+          "unitypy_version": "1.25.4",
+          "null_script_count": 0,
+          "reader_errors": 0
+        },
+        {
+          "mono_behaviours_read": 0,
+          "source_name": "ui_icon_sprite_assets_all_477812c61a3d0687a1a46193045aa5e5.bundle",
+          "source_bytes": 207899,
+          "source_sha256": "1d9f1ff042966829ad5c560d63afb12314a16bfa8aeeb23bb618618030cb88cd",
+          "unitypy_version": "1.25.4",
+          "null_script_count": 0,
+          "reader_errors": 0
+        }
+      ],
+      "original_null_objects": [
+        {
+          "collection": "CAB-8f56529fcacca77a9e69c7da81c15042.sharedAssets",
+          "path_id": "411",
+          "name": "Time Dilation Track",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 52,
+          "header_bytes": 52,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "d61ced587f0ffb24b924191d159fe84f7396ca09a78d421087f304ac1355fbfc"
+        },
+        {
+          "collection": "CAB-8f56529fcacca77a9e69c7da81c15042.sharedAssets",
+          "path_id": "412",
+          "name": "TimeDilationPlayableAsset",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 60,
+          "header_bytes": 60,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "8f65d0f300a76f9ecd0371c3fc0b1a0952029b83921c72bc840ff3e673efb020"
+        },
+        {
+          "collection": "CAB-8f56529fcacca77a9e69c7da81c15042.sharedAssets",
+          "path_id": "413",
+          "name": "TimeDilationPlayableAsset",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 60,
+          "header_bytes": 60,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "8f65d0f300a76f9ecd0371c3fc0b1a0952029b83921c72bc840ff3e673efb020"
+        }
+      ],
+      "exported_null_assets": [
+        {
+          "asset": "Assets/MonoBehaviour/Time Dilation Track_0.asset",
+          "name": "Time Dilation Track"
+        },
+        {
+          "asset": "Assets/MonoBehaviour/TimeDilationPlayableAsset.asset",
+          "name": "TimeDilationPlayableAsset"
+        },
+        {
+          "asset": "Assets/MonoBehaviour/TimeDilationPlayableAsset_0.asset",
+          "name": "TimeDilationPlayableAsset"
+        }
+      ]
+    },
+    {
+      "scope": "group03",
+      "comparison": {
+        "status": "nulls_already_present_in_source_headers",
+        "source_null_count": 82,
+        "export_null_count": 82,
+        "name_multisets_equal": true,
+        "source_opaque_payload_bytes": 0,
+        "header_only_baseline_confirmed": true,
+        "individual_export_identity_mapping_verified": false,
+        "source_null_names": {
+          "": 82
+        },
+        "export_null_names": {
+          "": 82
+        },
+        "unity_editor_verified": false
+      },
+      "sources": [
+        {
+          "mono_behaviours_read": 19852,
+          "source_name": "defaultlocalgroup_assets_all.bundle",
+          "source_bytes": 155336323,
+          "source_sha256": "84a2953b82b2c68729be430c9f17564bf8ae4e0783ef9106a1dd756baed889ed",
+          "unitypy_version": "1.25.4",
+          "null_script_count": 0,
+          "reader_errors": 0
+        },
+        {
+          "mono_behaviours_read": 1,
+          "source_name": "font_assets_all.bundle",
+          "source_bytes": 10759,
+          "source_sha256": "ea22b9a25fda321f895793796d96472b2289566a25879e54f11385167e323125",
+          "unitypy_version": "1.25.4",
+          "null_script_count": 0,
+          "reader_errors": 0
+        },
+        {
+          "mono_behaviours_read": 2496,
+          "source_name": "scene_worldsend_scenes_all_020575776a22f42cdd3e8a8cf1d2f8c1.bundle",
+          "source_bytes": 71771865,
+          "source_sha256": "2a83039ea9b3cedc7139e6a3a4fd62e5b5afa126a87e02b99158ada6ab364cee",
+          "unitypy_version": "1.25.4",
+          "null_script_count": 0,
+          "reader_errors": 0
+        },
+        {
+          "mono_behaviours_read": 0,
+          "source_name": "special_assets_all.bundle",
+          "source_bytes": 356814,
+          "source_sha256": "b4664c0eb2f63f457f3c94c9577fb71ed31fed28f4a75beb9a7d77735effe42e",
+          "unitypy_version": "1.25.4",
+          "null_script_count": 0,
+          "reader_errors": 0
+        },
+        {
+          "mono_behaviours_read": 18,
+          "source_name": "staticdata_assets_all.bundle",
+          "source_bytes": 1484522,
+          "source_sha256": "59791bf0c341bfae665040393fe845076cfff21b77a9847b9d43a57bd595f2c1",
+          "unitypy_version": "1.25.4",
+          "null_script_count": 0,
+          "reader_errors": 0
+        },
+        {
+          "mono_behaviours_read": 0,
+          "source_name": "traitcard_assets_all.bundle",
+          "source_bytes": 784701,
+          "source_sha256": "73cb2099e818a9faf4247ea60c208a9f5ffb05916d721e0633de5efe4027be75",
+          "unitypy_version": "1.25.4",
+          "null_script_count": 0,
+          "reader_errors": 0
+        },
+        {
+          "mono_behaviours_read": 138,
+          "source_name": "vfx_assets_all.bundle",
+          "source_bytes": 11419475,
+          "source_sha256": "c719835355da108c91514d3d863b615fa7f6e6366b7cec139cd7310dc0d9ba6d",
+          "unitypy_version": "1.25.4",
+          "null_script_count": 82,
+          "reader_errors": 0
+        }
+      ],
+      "original_null_objects": [
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-100326070791016596",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-1130180423771121119",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-1358121689529539017",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-1413858253044455819",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-1719573897640214847",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-1904904660169960061",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-1963164626507259501",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-1993310710661514888",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-2182634303978878756",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-2297712651234567581",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-3031801324102072584",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-3035747964241166572",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-3083125819335042293",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-317351149011691808",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-3238013981339671213",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-3668394970904998070",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-4132755939363222588",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-4297672002603881300",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-4961219894011115127",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-5021736033715613293",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-5157225830250666507",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-5370924826391654753",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-5543482752071951865",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-6033920430586611431",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-6308645435614172398",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-6800925870542664611",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-69312481758618147",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-6942603224400291881",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-6959806753953722590",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-7079303331656482162",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-7122689896950600166",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-712451977739890956",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-7456962164437288549",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-7881947366859755844",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-7965137950782178190",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-8180153900592453088",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-8314468665411084724",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-837291542130564852",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-8387359805384325340",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-8408628655335206148",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-8413756324413024829",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-8428536529758359284",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-8648706811336504652",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-8687695492775841855",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-8898334755220585170",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "-890132425859563669",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "1469981183386135077",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "2010036131970588802",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "2070940391939518648",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "2082624586300566607",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "2090341592334085350",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "2163859522920948623",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "2383033064790594479",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "2493032307163552260",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "2588278109193040070",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "2943962846150278230",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "3005904067229955484",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "303811513161543679",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "3265723659636796451",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "3358037813527060075",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "3943269791551081538",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "4326529218994988482",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "4491749777312965009",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "5308413697141072935",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "5570562442383552633",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "5815964345789153529",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "6235652636048645382",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "6286628578773815620",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "6456364129082744427",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "6590805059821758996",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "690437542058436291",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "6964409105424775867",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "7101013548796453953",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "7269195163108546115",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "7450013286444049127",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "7751012187027804697",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "7784310968124908241",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "8216652564762604772",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "8385627420837079598",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "8541936140841827974",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "8941313668091631222",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        },
+        {
+          "collection": "CAB-8a94ff4b2993c12c045499575f8585f6",
+          "path_id": "9008099672693908997",
+          "name": "",
+          "script_file_id": 0,
+          "script_path_id": "0",
+          "game_object_path_id": "0",
+          "source_bytes": 32,
+          "header_bytes": 32,
+          "opaque_payload_bytes": 0,
+          "raw_sha256": "bae3e67a9d5505a5685ebb52b8510b44315c0faa422f0ebfd4ef3413490248fb"
+        }
+      ],
+      "exported_null_assets": [
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_42.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_31.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_79.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_5.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_8.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_73.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_44.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_70.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_35.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_23.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_76.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_25.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_6.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_60.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_62.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_46.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_80.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_2.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_48.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_21.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_58.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_16.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_28.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_63.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_59.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_78.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_0.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_66.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_34.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_50.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_3.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_11.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_22.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_41.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_14.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_37.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_29.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_49.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_52.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_64.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_17.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_74.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_1.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_13.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_77.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_51.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_4.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_38.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_24.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_33.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_43.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_7.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_19.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_54.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_30.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_15.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_9.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_10.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_47.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_61.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_67.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_65.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_26.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_71.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_56.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_55.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_39.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_36.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_45.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_57.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_18.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_69.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_53.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_72.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_27.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_40.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_68.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_32.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_20.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_12.asset",
+          "name": ""
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_75.asset",
+          "name": ""
+        }
+      ]
+    }
+  ],
+  "interpretation": "The 86 inspected null-script records have matching names/counts already in original binaries and contain only the common header. No class is assigned or guessed. This is aggregate provenance, not a validation of all asset links or gameplay."
+}

@@ -46,5 +46,16 @@
     "remaining_case_conflicts": 0,
     "serialized_contents_changed": false,
     "unity_editor_executed": false
+  },
+  "script_provenance_revision": {
+    "regression_tests": 62,
+    "local_tests_passed": true,
+    "source_files_read": 14,
+    "source_nulls": 86,
+    "export_nulls": 86,
+    "opaque_payload_bytes": 0,
+    "aggregate_name_counts_match": true,
+    "individual_export_guid_mapping_verified": false,
+    "unity_editor_executed": false
   }
 }

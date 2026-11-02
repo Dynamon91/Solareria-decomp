@@ -449,9 +449,18 @@ def verify_materialized(args):
     print('File mancanti:', len(result['missing_files']), '; modificati:', len(result['altered_files']))
     return 0 if result['ok'] else 2
 
+def inspect_original_scripts(args):
+    from source_scripts import inspect_sources
+    result = inspect_sources(args.input, args.export_project, args.timeout)
+    write_json(Path(args.report).expanduser().resolve(), result)
+    print(json.dumps(result['comparison'] or {'original_nulls': len(result['merged']['original_null_scripts']), 'errors':len(result['merged']['errors'])}, indent=2))
+    if result['merged']['errors']: return 2
+    return 0 if not result['comparison'] or result['comparison']['header_only_baseline_confirmed'] else 2
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
+    p = sub.add_parser('inspect-scripts'); p.add_argument('input'); p.add_argument('--export-project'); p.add_argument('--timeout', type=int, default=180); p.add_argument('--report', default=str(ROOT/'.local/reports/script-source.json'))
     p = sub.add_parser('verify-copy'); p.add_argument('input'); p.add_argument('--report', default=str(ROOT/'.local/reports/copy-verification.json'))
     p = sub.add_parser('materialize'); p.add_argument('input'); p.add_argument('--output', default=str(ROOT/'.local/working')); p.add_argument('--project'); p.add_argument('--resume', action='store_true'); p.add_argument('--plan-only', action='store_true')
     p = sub.add_parser('audit'); p.add_argument('input'); p.add_argument('--report', default=str(ROOT/'.local/reports/unity-audit.json')); p.add_argument('--samples', type=int, default=5); p.add_argument('--strict', action='store_true')
@@ -465,11 +474,13 @@ def main():
     p = sub.add_parser('export'); p.add_argument('--asset-ripper', required=True); p.add_argument('--bundle'); p.add_argument('--retry', action='store_true')
     p.add_argument('--dotnet', default='dotnet'); p.add_argument('--heap-mib', type=int, default=2048)
     args = parser.parse_args()
+    if hasattr(args, 'timeout') and args.timeout < 1: parser.error('--timeout deve essere positivo.')
     if hasattr(args, 'heap_mib') and args.heap_mib < 256: parser.error('--heap-mib deve essere almeno 256.')
     try:
         if args.command == 'doctor': return doctor(args)
         with operation_lock():
-            if args.command == 'verify-copy': return verify_materialized(args)
+            if args.command == 'inspect-scripts': return inspect_original_scripts(args)
+            elif args.command == 'verify-copy': return verify_materialized(args)
             elif args.command == 'materialize': return materialize_assets(args)
             elif args.command == 'audit': return audit_assets(args)
             elif args.command == 'prepare': prepare(args.game)

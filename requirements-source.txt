@@ -1,0 +1,2 @@
+# Optional binary-source diagnostics only; not needed for the core regression suite.
+UnityPy==1.25.4

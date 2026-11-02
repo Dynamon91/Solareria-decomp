@@ -91,6 +91,21 @@ Il controllo legge metadati e YAML a blocchi e non decomprime le immagini in RAM
 
 L'audit del recupero reale e descritto in [PROGRESS.md](PROGRESS.md): 27.329 YAML analizzati, 2 GUID distinti non risolti, 86 campi m_Script nulli e 5 coppie di risorse con nomi in conflitto. Queste segnalazioni restano aperte; il progetto non e stato avviato in Unity.
 
+## Origine degli script nulli
+
+Il comando opzionale `inspect-scripts` legge le intestazioni MonoBehaviour dai file binari originali e le confronta con un singolo progetto esportato. Serve a distinguere un puntatore gia nullo nel sorgente da una perdita da indagare durante il recupero. Il confronto riguarda conteggi e nomi: non ricostruisce l'associazione individuale fra PathID originali e GUID esportati.
+
+```powershell
+py -m pip install -r requirements-source.txt
+py manage.py inspect-scripts "C:\SolateriaWork\Group_03\ExportedProject\Assets\StreamingAssets\aa\StandaloneWindows64\vfx_assets_all.bundle" --export-project "C:\SolateriaWork\Group_03\ExportedProject"
+```
+
+Per gli altri gruppi usare i file binari originali corrispondenti. Sono supportati un file `.assets`/`.bundle` o una cartella contenente tali file. Per il gruppo Base si puo usare `Solateria_Data/resources.assets` della copia originale del gioco. Il rapporto predefinito e `.local/reports/script-source.json`; cambiarlo con `--report`.
+
+Il lettore richiede UnityPy 1.25.4, che resta una dipendenza opzionale: gli altri comandi e i test di regressione non la richiedono. Usa un processo separato per ciascun file, disabilita il lettore typetree C e applica un timeout per file (predefinito 180 secondi, modificabile con `--timeout`). Sono accettate le intestazioni della versione Unity 2022.3.62f2 analizzata in questo progetto.
+
+Errori di lettura, conteggi diversi, documenti esportati ambigui o byte opachi oltre l'intestazione impediscono una conferma completa e restituiscono il codice 2. La comparsa dello stesso nome di classe nei sorgenti C# non autorizza ad assegnarlo a un oggetto con script nullo: potrebbe essere un residuo di una versione precedente. Il comando non modifica gli asset e non dichiara il gioco avviabile.
+
 ## Diagnosi e recupero
 
 Controllo iniziale, senza modificare i sorgenti:
@@ -167,3 +182,19 @@ Eseguita una copia reale di **69.284 file in dieci progetti**, per **7.850.032.1
 Il nuovo audit della copia ha rilevato **zero conflitti di nomi**, mantenendo invariati i due GUID distinti non risolti e gli 86 campi m_Script nulli del recupero originario. Questi ultimi casi restano aperti; i progetti non sono stati aperti in Unity e il gioco non e stato avviato. Il rapporto riproducibile e in [reports/windows-copy-verification.json](reports/windows-copy-verification.json).
 
 La suite comprende **52 test**; l'esito multipiattaforma e pubblicato in Actions. Le prove coprono anche rinomina delle meta, conservazione di Packages, ripresa, file modificati, percorsi lunghi, ZIP non sicuri, collisioni dei nomi di progetto e manifesti incompleti. I test automatici non richiedono asset del gioco.
+
+### Devlog — verifica nei binari originali
+
+**Completamento verificato: 60%.** Esaminati 14 file binari originali delle tre aree che contengono tutte le 86 segnalazioni dell'audit: metadati Base, bundle del gruppo 02 e bundle del gruppo 03. Nessun errore di lettura. Conteggi e nomi degli oggetti con script nullo corrispondono ai progetti esportati:
+
+| Area | Nulli nel binario | Nulli esportati | Byte oltre l'intestazione negli oggetti nulli |
+|---|---:|---:|---:|
+| Base | 1 | 1 | 0 |
+| Gruppo 02 | 3 | 3 | 0 |
+| Gruppo 03 | 82 | 82 | 0 |
+
+I tre oggetti legacy Time Dilation del gruppo 02 hanno gia il puntatore nullo nel bundle originale, mentre altri oggetti validi fanno riferimento a TimeDilationTrack e TimeDilationClip. Assegnare automaticamente la classe attuale agli oggetti legacy sarebbe una modifica del gioco originale, non un recupero dimostrato. Gli 82 record del gruppo 03 e il record FMOD di Base presentano lo stesso comportamento di intestazione gia nulla.
+
+Questa verifica riclassifica le 86 segnalazioni come baseline originale nel confronto aggregato; non dimostra una perdita introdotta dalla decompilazione. La corrispondenza individuale con i GUID e il comportamento nell'editor restano da convalidare. Restano inoltre i due GUID distinti segnalati dall'audit: nessun riferimento e stato inventato o riassegnato. Evidenza in [reports/script-source-provenance.json](reports/script-source-provenance.json).
+
+Aggiunti diagnostica della provenienza, dipendenza opzionale fissata e test per intestazioni corrotte, payload opachi, differenze di nomi/conteggi, ID a 64 bit, identita duplicate e processi di lettura falliti. La suite comprende ora **62 test**; i risultati multipiattaforma sono in Actions. Nessun asset originale o sorgente C# e stato modificato.
