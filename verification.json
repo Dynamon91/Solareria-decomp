@@ -13,6 +13,15 @@
   "resume_verified": true,
   "all_assets_retested": false,
   "unity_editor_tested": false,
-  "github_uploaded": true,
-  "github_repository": "Dynamon91/Solareria-decomp"
+  "github_uploaded": false,
+  "reliability_revision": {
+    "regression_tests": 21,
+    "regression_tests_passed": true,
+    "test_inputs": "synthetic fixtures; mocked ILSpy and AssetRipper boundaries; real OS lock/crash test",
+    "local_platform": "Linux",
+    "dotnet_rebuilt_this_revision": false,
+    "real_asset_export_retested_this_revision": false,
+    "unity_editor_tested": false,
+    "github_ci": "configured; results reported by Actions"
+  }
 }
