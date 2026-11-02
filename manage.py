@@ -429,9 +429,31 @@ def audit_assets(args):
             'metadata_without_guid_count', 'orphan_metadata_count', 'case_conflict_count', 'duplicate_archive_entries']
     return 2 if args.strict and any(result['summary'][key] for key in keys) else 0
 
+def materialize_assets(args):
+    from unity_copy import materialize, plan
+    if args.plan_only:
+        result = plan(args.input, args.project)
+        destination = ROOT/'.local/reports/materialize-plan.json'
+        write_json(destination, result)
+        print('Piano:', destination)
+    else:
+        result = materialize(args.input, args.output, args.project, args.resume)
+    print(json.dumps({k: v for k, v in result.items() if k not in {'entries', 'renames'}}, indent=2))
+    return 0
+
+def verify_materialized(args):
+    from unity_copy import verify
+    result = verify(args.input)
+    write_json(Path(args.report).expanduser().resolve(), result)
+    print(json.dumps({k: v for k, v in result.items() if k not in {'missing_files', 'altered_files'}}, indent=2))
+    print('File mancanti:', len(result['missing_files']), '; modificati:', len(result['altered_files']))
+    return 0 if result['ok'] else 2
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
+    p = sub.add_parser('verify-copy'); p.add_argument('input'); p.add_argument('--report', default=str(ROOT/'.local/reports/copy-verification.json'))
+    p = sub.add_parser('materialize'); p.add_argument('input'); p.add_argument('--output', default=str(ROOT/'.local/working')); p.add_argument('--project'); p.add_argument('--resume', action='store_true'); p.add_argument('--plan-only', action='store_true')
     p = sub.add_parser('audit'); p.add_argument('input'); p.add_argument('--report', default=str(ROOT/'.local/reports/unity-audit.json')); p.add_argument('--samples', type=int, default=5); p.add_argument('--strict', action='store_true')
     p = sub.add_parser('doctor'); p.add_argument('--dotnet', default='dotnet'); p.add_argument('--ilspy'); p.add_argument('--asset-ripper')
     p = sub.add_parser('prepare'); p.add_argument('game')
@@ -447,7 +469,9 @@ def main():
     try:
         if args.command == 'doctor': return doctor(args)
         with operation_lock():
-            if args.command == 'audit': return audit_assets(args)
+            if args.command == 'verify-copy': return verify_materialized(args)
+            elif args.command == 'materialize': return materialize_assets(args)
+            elif args.command == 'audit': return audit_assets(args)
             elif args.command == 'prepare': prepare(args.game)
             elif args.command == 'build': build(args.dotnet, args.project_root, args.msbuild)
             elif args.command == 'decompile': decompile(args)

@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "source_name": "Solateria_Recovery.zip",
+  "source_archive_sha256": "36749f9c92885c8399d19f15949f1299210d41f94b3839a03a5df6f9990498eb",
+  "projects_copied": 10,
+  "files_copied": 69284,
+  "source_payload_bytes": 7850032134,
+  "renamed_asset_count": 5,
+  "renames": [
+    {
+      "project": "Solateria_Recovery/UnityExports/Bundles/Group_03/ExportedProject",
+      "asset": "Assets/MonoBehaviour/bloom.asset",
+      "new_asset": "Assets/MonoBehaviour/bloom__c2eb6eac0032.asset",
+      "meta": "Assets/MonoBehaviour/bloom.asset.meta",
+      "new_meta": "Assets/MonoBehaviour/bloom__c2eb6eac0032.asset.meta",
+      "unchanged_guid": "c2eb6eac003258b4aa05209587248dbe"
+    },
+    {
+      "project": "Solateria_Recovery/UnityExports/Bundles/Group_03/ExportedProject",
+      "asset": "Assets/MonoBehaviour/vfx_Moldin_slash_FloorAttack_01.asset",
+      "new_asset": "Assets/MonoBehaviour/vfx_Moldin_slash_FloorAttack_01__a0d22c91c1c5.asset",
+      "meta": "Assets/MonoBehaviour/vfx_Moldin_slash_FloorAttack_01.asset.meta",
+      "new_meta": "Assets/MonoBehaviour/vfx_Moldin_slash_FloorAttack_01__a0d22c91c1c5.asset.meta",
+      "unchanged_guid": "a0d22c91c1c5bca4daae4eb585b17e74"
+    },
+    {
+      "project": "Solateria_Recovery/UnityExports/Bundles/Group_03/ExportedProject",
+      "asset": "Assets/Texture2D/gaia_mark.png",
+      "new_asset": "Assets/Texture2D/gaia_mark__a67e51256e1d.png",
+      "meta": "Assets/Texture2D/gaia_mark.png.meta",
+      "new_meta": "Assets/Texture2D/gaia_mark__a67e51256e1d.png.meta",
+      "unchanged_guid": "a67e51256e1d5e04aadc499931cc6a7e"
+    },
+    {
+      "project": "Solateria_Recovery/UnityExports/Bundles/Group_04/ExportedProject",
+      "asset": "Assets/MonoBehaviour/sfx.asset",
+      "new_asset": "Assets/MonoBehaviour/sfx__aca858ed1e02.asset",
+      "meta": "Assets/MonoBehaviour/sfx.asset.meta",
+      "new_meta": "Assets/MonoBehaviour/sfx__aca858ed1e02.asset.meta",
+      "unchanged_guid": "aca858ed1e025ce4184287bcbcca9496"
+    },
+    {
+      "project": "Solateria_Recovery/UnityExports/Bundles/Group_04/ExportedProject",
+      "asset": "Assets/MonoBehaviour/vfx.asset",
+      "new_asset": "Assets/MonoBehaviour/vfx__0fff6ac82bce.asset",
+      "meta": "Assets/MonoBehaviour/vfx.asset.meta",
+      "new_meta": "Assets/MonoBehaviour/vfx__0fff6ac82bce.asset.meta",
+      "unchanged_guid": "0fff6ac82bce8114db3481c5625d1bb3"
+    }
+  ],
+  "copy_integrity": {
+    "verified_files": 69284,
+    "expected_files": 69284,
+    "missing_files": [],
+    "altered_files": [],
+    "ok": true,
+    "unity_editor_verified": false
+  },
+  "source_audit_summary": {
+    "yaml_files_scanned": 27329,
+    "non_yaml_files_skipped": 0,
+    "missing_local_guid_count": 10,
+    "external_guid_candidates_count": 0,
+    "duplicate_guid_count": 0,
+    "null_script_count": 86,
+    "referenced_null_script_asset_count": 1,
+    "assets_without_meta_count": 0,
+    "metadata_without_guid_count": 0,
+    "orphan_metadata_count": 0,
+    "case_conflict_count": 10,
+    "case_asset_conflict_count": 5,
+    "ignored_export_file_count": 25,
+    "projects_scanned": 10,
+    "unique_globally_missing_guids": 2,
+    "duplicate_archive_entries": 0
+  },
+  "copy_audit_summary": {
+    "yaml_files_scanned": 27329,
+    "non_yaml_files_skipped": 0,
+    "missing_local_guid_count": 10,
+    "external_guid_candidates_count": 0,
+    "duplicate_guid_count": 0,
+    "null_script_count": 86,
+    "referenced_null_script_asset_count": 1,
+    "assets_without_meta_count": 0,
+    "metadata_without_guid_count": 0,
+    "orphan_metadata_count": 0,
+    "case_conflict_count": 0,
+    "case_asset_conflict_count": 0,
+    "ignored_export_file_count": 57,
+    "projects_scanned": 10,
+    "unique_globally_missing_guids": 2,
+    "duplicate_archive_entries": 0
+  },
+  "materialize_peak_process_rss_mib": 155.0,
+  "serialized_contents_changed": false,
+  "unity_editor_verified": false,
+  "limitations": [
+    "Copied projects remain separate; no scene/bundle integration or Unity runtime test was performed.",
+    "File contents and GUIDs were preserved. String-based pathname lookups require review after renaming.",
+    "OriginalStreamingAssets audio banks remain in the source recovery archive; this command copies ExportedProject folders."
+  ]
+}

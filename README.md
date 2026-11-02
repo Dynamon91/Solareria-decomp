@@ -59,6 +59,26 @@ Ogni esecuzione elabora prima i dati di base, poi i 53 bundle separatamente. Out
 
 Il limite predefinito dell'heap gestito e 2.048 MiB, configurabile con `--heap-mib`. Memoria nativa, buffer e processi aggiuntivi richiedono RAM oltre questo valore. I bundle piu grandi possono ancora esaurire la memoria: lo script segnala l'errore, non dichiara completato un lavoro fallito. Le esportazioni a blocchi possono avere riferimenti mancanti tra bundle; non costituiscono un progetto Unity funzionante gia verificato. Le banche FMOD restano nella copia locale e nel precedente recupero completo, non vengono convertite da questo comando.
 
+## Copia di lavoro compatibile con Windows
+
+Estrarre lo ZIP del recupero con questo comando conserva entrambe le risorse quando i nomi differiscono solo per maiuscole/minuscole:
+
+```powershell
+py manage.py materialize "C:\Recupero\Solateria_Recovery.zip" --output "C:\SolateriaWork"
+py manage.py verify-copy "C:\SolateriaWork"
+py manage.py audit "C:\SolateriaWork" --strict
+```
+
+Il primo comando crea una cartella nuova; non sovrascrive un progetto esistente. Nel recupero attuale rinomina cinque file e le rispettive meta aggiungendo una porzione del GUID al nome. I byte dei file, i GUID, i campi serializzati e i pixel delle texture restano identici. Vengono conservati anche Packages e ProjectSettings. I dieci progetti restano separati: l'integrazione in Unity e le prove di gioco sono fasi successive. Le banche audio nella cartella OriginalStreamingAssets del recupero restano disponibili nello ZIP sorgente.
+
+Gli accessi alle risorse tramite stringhe di percorso possono richiedere un aggiornamento dopo la rinomina; vanno controllati nell'editor e durante il gioco. Il rapporto di copia non dichiara funzionante il gioco.
+
+Per copiare solo un gruppo, aggiungere `--project Group_03`. Per vedere il piano senza creare la copia, aggiungere `--plan-only`: il piano viene scritto in `.local/reports/materialize-plan.json`. Sono supportati anche percorsi Windows lunghi. Il programma si ferma su nomi di dispositivo riservati, percorsi non sicuri, link simbolici, voci ZIP duplicate o conflitti tra cartelle che richiedono una verifica dedicata.
+
+Ogni file viene letto a blocchi, controllato con CRC e SHA-256 e pubblicato nella copia parziale solo dopo una scrittura completa. `verify-copy` ricontrolla tutti i file della copia finale, inclusi immagini e DLL, contro il manifesto locale e segnala file mancanti o modificati. Usarlo prima di modificare le risorse in Unity: dopo modifiche intenzionali, i relativi hash saranno naturalmente diversi. Il manifesto locale e un riferimento d'integrita della copia, non una firma di autenticita del software.
+
+Se la copia si interrompe, resta una cartella con suffisso `.partial`; riprendere con gli stessi argomenti e `--resume`. I file gia copiati vengono ricontrollati tramite dimensione e CRC. Un archivio o un piano differente viene rifiutato; file parziali modificati vengono segnalati e conservati. A lavoro concluso la cartella parziale viene rinominata nella destinazione finale.
+
 ## Controllo delle risorse prima dell'importazione in Unity
 
 ```powershell
@@ -135,3 +155,15 @@ git status --short
 
 Committare e inviare al repository Solateria scelto. Non aggiungere forzatamente `References/`, `.local/` o cartelle `bin/obj`. Repository: [Dynamon91/Solareria-decomp](https://github.com/Dynamon91/Solareria-decomp). Per ottenere il progetto usare `git clone https://github.com/Dynamon91/Solareria-decomp.git` e poi eseguire i comandi di preparazione dalla cartella clonata.
 
+
+## Devlog — 2 novembre 2026
+
+**Completamento verificato: 60% (tre milestone su cinque).** Le milestone di integrazione Unity e di gioco avviabile restano da convalidare.
+
+Aggiunti `materialize` e `verify-copy`, con ripresa delle copie interrotte, associazione tra asset e meta, supporto ai percorsi Windows lunghi e controlli di integrita per i file binari. I conflitti di nomi fra progetti e le combinazioni non sicure vengono rilevati prima della scrittura.
+
+Eseguita una copia reale di **69.284 file in dieci progetti**, per **7.850.032.134 byte** di contenuti. Corrette cinque collisioni di nomi mediante rinomina abbinata delle meta, con GUID invariati. La verifica successiva ha ricontrollato tutti i 69.284 file: zero mancanti e zero modificati rispetto agli hash della copia. Picco misurato del processo di materializzazione: **155 MiB**.
+
+Il nuovo audit della copia ha rilevato **zero conflitti di nomi**, mantenendo invariati i due GUID distinti non risolti e gli 86 campi m_Script nulli del recupero originario. Questi ultimi casi restano aperti; i progetti non sono stati aperti in Unity e il gioco non e stato avviato. Il rapporto riproducibile e in [reports/windows-copy-verification.json](reports/windows-copy-verification.json).
+
+La suite comprende **52 test**; l'esito multipiattaforma e pubblicato in Actions. Le prove coprono anche rinomina delle meta, conservazione di Packages, ripresa, file modificati, percorsi lunghi, ZIP non sicuri, collisioni dei nomi di progetto e manifesti incompleti. I test automatici non richiedono asset del gioco.

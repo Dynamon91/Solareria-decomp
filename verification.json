@@ -36,5 +36,15 @@
     "case_asset_conflict_count": 5,
     "peak_process_rss_mib": 106.5,
     "unity_editor_executed": false
+  },
+  "portable_copy_revision": {
+    "regression_tests": 52,
+    "local_tests_passed": true,
+    "real_projects_copied": 10,
+    "real_files_verified": 69284,
+    "renamed_assets": 5,
+    "remaining_case_conflicts": 0,
+    "serialized_contents_changed": false,
+    "unity_editor_executed": false
   }
 }
