@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "basis": "Cinque milestone tecniche di uguale peso; percentuale di fasi convalidate.",
+  "overall_verified_percent": 60.0,
+  "milestones": [
+    {
+      "id": "code",
+      "title": "Recupero e compilazione C#",
+      "weight_percent": 20,
+      "verified_percent": 100,
+      "evidence": "4 assembly recuperati e compilati nelle verifiche precedenti; sorgenti C# invariati."
+    },
+    {
+      "id": "bundles",
+      "title": "Esportazione bundle",
+      "weight_percent": 20,
+      "verified_percent": 100,
+      "evidence": "53 bundle elaborati nel recupero; fedelta e collegamenti richiedono la fase Unity."
+    },
+    {
+      "id": "pipeline",
+      "title": "Procedura e salvataggio GitHub",
+      "weight_percent": 20,
+      "verified_percent": 100,
+      "evidence": "Pipeline a blocchi, controlli di integrita e test automatici; audit eseguito sul recupero reale."
+    },
+    {
+      "id": "unity_integration",
+      "title": "Integrazione delle risorse in Unity",
+      "weight_percent": 20,
+      "verified_percent": 0,
+      "evidence": "Audit statico completato; collegamenti e script segnalati ancora da ricostruire e convalidare in Unity."
+    },
+    {
+      "id": "playable",
+      "title": "Build avviabile e prova di gioco",
+      "weight_percent": 20,
+      "verified_percent": 0,
+      "evidence": "Nessuna prova di esecuzione del gioco ricostruito."
+    }
+  ],
+  "runtime_game_completeness_measured": false
+}

@@ -1,5 +1,7 @@
 # Solateria — GitHub Lite
 
+**Completamento verificato: 60% (3 milestone tecniche su 5).** Dettagli, percentuali per fase e risultati reali in [PROGRESS.md](PROGRESS.md).
+
 Sorgenti C# recuperati e procedura locale sequenziale. Il repository contiene 1.567 file C# utili; due segnaposto vuoti del recupero precedente sono stati eliminati. Le risorse originali non vengono ridimensionate o alterate.
 
 ## Cosa diventa leggero
@@ -57,6 +59,18 @@ Ogni esecuzione elabora prima i dati di base, poi i 53 bundle separatamente. Out
 
 Il limite predefinito dell'heap gestito e 2.048 MiB, configurabile con `--heap-mib`. Memoria nativa, buffer e processi aggiuntivi richiedono RAM oltre questo valore. I bundle piu grandi possono ancora esaurire la memoria: lo script segnala l'errore, non dichiara completato un lavoro fallito. Le esportazioni a blocchi possono avere riferimenti mancanti tra bundle; non costituiscono un progetto Unity funzionante gia verificato. Le banche FMOD restano nella copia locale e nel precedente recupero completo, non vengono convertite da questo comando.
 
+## Controllo delle risorse prima dell'importazione in Unity
+
+```powershell
+py manage.py audit "C:\Recupero\Solateria_Recovery.zip" --strict
+```
+
+In alternativa passare la cartella `ExportedProject`. Il rapporto viene scritto in `.local/reports/unity-audit.json`; scegliere un'altra destinazione con `--report`. Il comando e di sola lettura sulle risorse. Il codice di uscita e 0 se il controllo termina, 2 se `--strict` trova casi da verificare, 1 per errori di input o lettura. Un risultato statico senza segnalazioni richiede comunque la verifica nell'editor e in esecuzione.
+
+Il controllo legge metadati e YAML a blocchi e non decomprime le immagini in RAM. I file binari non analizzabili come YAML vengono contati come saltati, non dichiarati validati. I GUID risolti in un altro progetto esportato sono soltanto candidati: non vengono ricopiati o assegnati automaticamente. I nomi che collidono per maiuscole/minuscole vanno risolti prima di estrarre un progetto su un filesystem non sensibile alle maiuscole, conservando le meta e verificando gli accessi per nome.
+
+L'audit del recupero reale e descritto in [PROGRESS.md](PROGRESS.md): 27.329 YAML analizzati, 2 GUID distinti non risolti, 86 campi m_Script nulli e 5 coppie di risorse con nomi in conflitto. Queste segnalazioni restano aperte; il progetto non e stato avviato in Unity.
+
 ## Diagnosi e recupero
 
 Controllo iniziale, senza modificare i sorgenti:
@@ -91,7 +105,7 @@ Sono test di regressione con input sintetici e risposte simulate per ILSpy/Asset
 
 ## Verifiche della revisione di affidabilita
 
-21 test eseguiti con esito positivo in Linux: copia interrotta, rollback della configurazione, cache corrotta, asset cancellati o modificati, ripresa e nuovo tentativo, checkpoint corrotti, log di errori precedenti, mancato avvio del processo, cartelle con spazi, diagnostica SDK/dipendenze file in sola lettura e rilascio del blocco anche dopo un'uscita improvvisa. Nessun sorgente C# e stato modificato. In questa revisione non sono state rieseguite le compilazioni .NET, l'esportazione con gli strumenti reali o Unity; le verifiche precedenti sono riportate sotto come storico.
+La suite di affidabilita originaria comprende 21 test, superati su Linux e Windows con Python 3.10 e 3.12: copia interrotta, rollback della configurazione, cache corrotta, asset cancellati o modificati, ripresa e nuovo tentativo, checkpoint corrotti, log di errori precedenti, mancato avvio del processo, cartelle con spazi, diagnostica SDK/dipendenze file in sola lettura e rilascio del blocco anche dopo un'uscita improvvisa. L'aggiunta dell'audit porta la suite a 37 test (37/37 superati localmente in Linux); il nuovo risultato multipiattaforma e visibile in Actions. Nessun sorgente C# e stato modificato. In questa revisione non sono state rieseguite le compilazioni .NET, l'esportazione con gli strumenti reali o Unity; le verifiche precedenti sono riportate sotto come storico.
 
 ## Verifiche precedenti sul recupero reale
 

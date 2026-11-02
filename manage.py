@@ -417,9 +417,22 @@ def export(args):
                         except subprocess.TimeoutExpired: proc.kill(); proc.wait()
     
 
+def audit_assets(args):
+    from asset_audit import audit
+    result = audit(args.input, args.samples)
+    destination = Path(args.report).expanduser().resolve()
+    write_json(destination, result)
+    print(json.dumps(result['summary'], indent=2))
+    print('Rapporto statico:', destination)
+    print('I riferimenti segnalati richiedono verifica in Unity; nessun asset e stato modificato.')
+    keys = ['missing_local_guid_count', 'duplicate_guid_count', 'null_script_count', 'assets_without_meta_count',
+            'metadata_without_guid_count', 'orphan_metadata_count', 'case_conflict_count', 'duplicate_archive_entries']
+    return 2 if args.strict and any(result['summary'][key] for key in keys) else 0
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
+    p = sub.add_parser('audit'); p.add_argument('input'); p.add_argument('--report', default=str(ROOT/'.local/reports/unity-audit.json')); p.add_argument('--samples', type=int, default=5); p.add_argument('--strict', action='store_true')
     p = sub.add_parser('doctor'); p.add_argument('--dotnet', default='dotnet'); p.add_argument('--ilspy'); p.add_argument('--asset-ripper')
     p = sub.add_parser('prepare'); p.add_argument('game')
     p = sub.add_parser('build'); p.add_argument('--project-root', default=str(ROOT))
@@ -434,7 +447,8 @@ def main():
     try:
         if args.command == 'doctor': return doctor(args)
         with operation_lock():
-            if args.command == 'prepare': prepare(args.game)
+            if args.command == 'audit': return audit_assets(args)
+            elif args.command == 'prepare': prepare(args.game)
             elif args.command == 'build': build(args.dotnet, args.project_root, args.msbuild)
             elif args.command == 'decompile': decompile(args)
             elif args.command == 'export': export(args)

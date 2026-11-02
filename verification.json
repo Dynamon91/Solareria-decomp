@@ -23,5 +23,18 @@
     "real_asset_export_retested_this_revision": false,
     "unity_editor_tested": false,
     "github_ci": "configured; results reported by Actions"
+  },
+  "asset_audit_revision": {
+    "regression_tests": 37,
+    "local_tests_passed": true,
+    "local_platform": "Linux",
+    "real_recovery_archive_scanned": true,
+    "yaml_files_scanned": 27329,
+    "projects_scanned": 10,
+    "unique_globally_missing_guids": 2,
+    "null_script_count": 86,
+    "case_asset_conflict_count": 5,
+    "peak_process_rss_mib": 106.5,
+    "unity_editor_executed": false
   }
 }
