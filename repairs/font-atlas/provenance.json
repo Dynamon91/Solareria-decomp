@@ -1,0 +1,27 @@
+{
+  "old_material_sha256": "da8b32128d70e7fe3c397a448368d6648067c276d04de54a216a8105c2c24801",
+  "old_fallback_sha256": "c5532adbb4cd67afd1079ca33ae89816fbc628d6c4a8ac48319bb10b228b9cce",
+  "material_to_fallback_chain_verified": true,
+  "matching_saved_float_count": 67,
+  "matching_saved_color_count": 12,
+  "new_native_asset_pointer": {
+    "fileID": 2800000,
+    "guid": "041d537eaa9a22e4380b6499a45227e5",
+    "type": 2
+  },
+  "source_original_texture_path_id": "234",
+  "empty_native_texture_source_verified": true,
+  "unity_editor_verified": false,
+  "patch_files_sha256": {
+    "LiberationSans SDF Atlas.texture2D": "f7bb186894f6acf9a8dbc9204a39e3b6b05dcc47f37f328648325d1e3280553c",
+    "LiberationSans SDF Atlas.texture2D.meta": "7047347a8be99788c4936f1b6bb3b50f69ca4454528ad0a34d5a9c28b6895d0b"
+  },
+  "original_material_path_id": "21",
+  "material_fields_compared_to_original": true,
+  "original_texture_raw_sha256": "0074cb84747bce857242bbd1935f003d97a96ef0aa44d732b3d325b29793c96a",
+  "original_resources_sha256": "8e1632dde8d2561a3d6017581bbb41a61d179c6a106d002bc89d11c31e99377a",
+  "original_meta_sha256": {
+    "LiberationSans SDF Material.mat": "a4d5462428e5a3f183b83b65220e78ba4d42d6918e94cc0c661b4369641a9eca",
+    "LiberationSans SDF - Fallback.asset": "f62c161637431c21c2f2a31512148edca7903f05930ef9f56af4ed109ab93f20"
+  }
+}

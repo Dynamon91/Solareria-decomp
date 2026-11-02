@@ -14,7 +14,9 @@ META_GUID = re.compile(rb'(?m)^guid:[ \t]*([0-9a-fA-F]{32})[ \t]*\r?$')
 REFERENCE = re.compile(rb'\bguid:[ \t]{0,32}([0-9a-fA-F]{32})(?=[\s,}])')
 NULL_SCRIPT = re.compile(rb'\bm_Script:[ \t]{0,32}\{[^}\r\n]{0,128}\bfileID:[ \t]{0,32}0[ \t]{0,32}[,}]')
 YAML_SUFFIXES = {'.unity', '.prefab', '.asset', '.mat', '.anim', '.controller',
-                 '.overridecontroller', '.playable', '.rendertexture', '.cubemap', '.guiskin', '.terrainlayer'}
+                 '.overridecontroller', '.playable', '.rendertexture', '.cubemap', '.guiskin', '.terrainlayer',
+                 '.texture2d', '.shadervariants', '.sprite', '.lighting', '.mask', '.mixer',
+                 '.giparams', '.statemachine', '.state', '.blendtree'}
 CHUNK_BYTES = 128 * 1024
 OVERLAP_BYTES = 256
 

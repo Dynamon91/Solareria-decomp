@@ -15,21 +15,21 @@
       "title": "Esportazione bundle",
       "weight_percent": 20,
       "verified_percent": 100,
-      "evidence": "53 bundle elaborati nel recupero; fedelta e collegamenti richiedono la fase Unity."
+      "evidence": "Export congiunto di 53 bundle e metadati originali completato; 30.512 collezioni esportate, nessun asset fallito nel log."
     },
     {
       "id": "pipeline",
       "title": "Procedura e salvataggio GitHub",
       "weight_percent": 20,
       "verified_percent": 100,
-      "evidence": "Pipeline a blocchi, controlli di integrita e test automatici; audit eseguito sul recupero reale."
+      "evidence": "100 test locali superati; archivio corretto verificato con CRC e SHA-256; 53 bundle e 6 banchi audio presenti."
     },
     {
       "id": "unity_integration",
       "title": "Integrazione delle risorse in Unity",
       "weight_percent": 20,
       "verified_percent": 0,
-      "evidence": "Copia verificata e cinque conflitti di nomi corretti. Gli 86 script nulli corrispondono alla baseline originale per conteggi e nomi; restano GUID, associazioni individuali e convalida Unity."
+      "evidence": "Audit statico sul nuovo export: zero GUID mancanti o duplicati e zero conflitti di nomi; 86 script nulli originali conservati. Tentativo Unity reale bloccato prima dell’importazione, codice 199 (IPC/licenze)."
     },
     {
       "id": "playable",

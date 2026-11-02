@@ -1,0 +1,55 @@
+{
+  "file_name": "Solateria_Repaired_Unity.zip",
+  "file_size_bytes": 3530916440,
+  "sha256": "8592f12ee0cbd4b35e428ea95c6d88bbee65e8aca092728ef3e0a9149b06be79",
+  "volume_bytes": 419430400,
+  "volumes": [
+    {
+      "file_name": "Solateria_Repaired_Unity.zip.001",
+      "size_bytes": 419430400,
+      "sha256": "b0c24ffdbf7128e2d043178071ca9758587d009df6571416f4fb779bceb7790d"
+    },
+    {
+      "file_name": "Solateria_Repaired_Unity.zip.002",
+      "size_bytes": 419430400,
+      "sha256": "14e738381f3a25065ab04016986997e9f08b810a4cae911dd82db96d930b13bf"
+    },
+    {
+      "file_name": "Solateria_Repaired_Unity.zip.003",
+      "size_bytes": 419430400,
+      "sha256": "f53bd07cea256ad0639cbb4302568383e9538502ebb899fb8ca980353ee6cd95"
+    },
+    {
+      "file_name": "Solateria_Repaired_Unity.zip.004",
+      "size_bytes": 419430400,
+      "sha256": "f78adf5232bb2faea06ef06a7f8d0a724eda18508732b1616328458914fd3d02"
+    },
+    {
+      "file_name": "Solateria_Repaired_Unity.zip.005",
+      "size_bytes": 419430400,
+      "sha256": "1f9f1059e7e4539aba16c0479cc15737ba31d28f8a423adefc4080effda6881a"
+    },
+    {
+      "file_name": "Solateria_Repaired_Unity.zip.006",
+      "size_bytes": 419430400,
+      "sha256": "96f9681b96aed8ef41e949883d66112dff3b5cdecf979885cce74e34e55690af"
+    },
+    {
+      "file_name": "Solateria_Repaired_Unity.zip.007",
+      "size_bytes": 419430400,
+      "sha256": "ff11240827c02d66ac1beab50ccc6b463e58c46e7347cf262aecfa255f4c1082"
+    },
+    {
+      "file_name": "Solateria_Repaired_Unity.zip.008",
+      "size_bytes": 419430400,
+      "sha256": "626339b47c1f79320295ef4fefe38963ca3cc2f57a96ffe2368de31cb9f1036a"
+    },
+    {
+      "file_name": "Solateria_Repaired_Unity.zip.009",
+      "size_bytes": 175473240,
+      "sha256": "7555221985959e57039b120cf0fe42a7ddae473b640e3b621db18ab73555d77d"
+    }
+  ],
+  "unity_editor_verified": false,
+  "runtime_verified": false
+}

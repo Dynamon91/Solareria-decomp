@@ -1,0 +1,700 @@
+{
+  "schema_version": 1,
+  "input_name": "ExportedProject",
+  "read_only": true,
+  "unity_editor_verified": false,
+  "summary": {
+    "yaml_files_scanned": 23639,
+    "non_yaml_files_skipped": 0,
+    "missing_local_guid_count": 4,
+    "external_guid_candidates_count": 0,
+    "duplicate_guid_count": 0,
+    "null_script_count": 86,
+    "referenced_null_script_asset_count": 1,
+    "assets_without_meta_count": 0,
+    "metadata_without_guid_count": 0,
+    "orphan_metadata_count": 0,
+    "case_conflict_count": 12,
+    "case_asset_conflict_count": 6,
+    "ignored_export_file_count": 0,
+    "projects_scanned": 1,
+    "unique_globally_missing_guids": 4,
+    "duplicate_archive_entries": 0
+  },
+  "projects": [
+    {
+      "project": ".",
+      "ignored_export_file_count": 0,
+      "case_asset_conflict_count": 6,
+      "yaml_files_scanned": 23639,
+      "non_yaml_files_skipped": 0,
+      "reference_occurrences": 405870,
+      "missing_local_guid_count": 4,
+      "missing_global_guid_count": 4,
+      "external_guid_candidates_count": 0,
+      "missing_local_guids": [
+        {
+          "guid": "03c49944d50bf7044be6acdff28f78ae",
+          "reference_kind": "asset_guid",
+          "occurrences": 1,
+          "sample_assets": [
+            "Assets/Scenes/World\u2019s End/WorldsEnd_01/LightingData.asset"
+          ],
+          "candidate_provider_count": 0,
+          "candidate_providers": []
+        },
+        {
+          "guid": "32ea36fceda527748bb1f6707f780169",
+          "reference_kind": "asset_guid",
+          "occurrences": 1,
+          "sample_assets": [
+            "Assets/Scenes/World\u2019s End/WorldsEnd_02/LightingData.asset"
+          ],
+          "candidate_provider_count": 0,
+          "candidate_providers": []
+        },
+        {
+          "guid": "6a409288d7bb6544a83b992353dccbe5",
+          "reference_kind": "asset_guid",
+          "occurrences": 1,
+          "sample_assets": [
+            "Assets/Scenes/World\u2019s End/WorldsEnd_03 (boss)/LightingData.asset"
+          ],
+          "candidate_provider_count": 0,
+          "candidate_providers": []
+        },
+        {
+          "guid": "a28482b8b8257fd4c9b9d7dcc943d2e3",
+          "reference_kind": "asset_guid",
+          "occurrences": 1,
+          "sample_assets": [
+            "Assets/Scenes/World\u2019s End/WorldsEnd_90/LightingData.asset"
+          ],
+          "candidate_provider_count": 0,
+          "candidate_providers": []
+        }
+      ],
+      "duplicate_guid_count": 0,
+      "duplicate_guids": [],
+      "null_script_count": 86,
+      "null_script_samples": [
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_41.asset",
+          "count": 1,
+          "guid": "44948b076ccc39848b0fca30ba16b08d",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_36.asset",
+          "count": 1,
+          "guid": "51d9ade511d2d1c43b273467de77ffc6",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_72.asset",
+          "count": 1,
+          "guid": "57a7fbe231deb23409f2ed6f6d2092f4",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_10.asset",
+          "count": 1,
+          "guid": "c5c8fcf5cffccad478434089a5413065",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_3.asset",
+          "count": 1,
+          "guid": "7e2af94b2f02f7f4aaf1ba6d6a2fc1fc",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_7.asset",
+          "count": 1,
+          "guid": "193d09cd8521f4043b734af2bf1fe9a6",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_76.asset",
+          "count": 1,
+          "guid": "fdaff85e34826dc4883a3fcb7fcfa913",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_80.asset",
+          "count": 1,
+          "guid": "96bf71f95b721414382375edf35e39d3",
+          "incoming_local_guid_references": 0
+        }
+      ],
+      "null_script_assets": [
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_41.asset",
+          "count": 1,
+          "guid": "44948b076ccc39848b0fca30ba16b08d",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_36.asset",
+          "count": 1,
+          "guid": "51d9ade511d2d1c43b273467de77ffc6",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_72.asset",
+          "count": 1,
+          "guid": "57a7fbe231deb23409f2ed6f6d2092f4",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_10.asset",
+          "count": 1,
+          "guid": "c5c8fcf5cffccad478434089a5413065",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_3.asset",
+          "count": 1,
+          "guid": "7e2af94b2f02f7f4aaf1ba6d6a2fc1fc",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_7.asset",
+          "count": 1,
+          "guid": "193d09cd8521f4043b734af2bf1fe9a6",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_76.asset",
+          "count": 1,
+          "guid": "fdaff85e34826dc4883a3fcb7fcfa913",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_80.asset",
+          "count": 1,
+          "guid": "96bf71f95b721414382375edf35e39d3",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_22.asset",
+          "count": 1,
+          "guid": "e97cf9e075e3de44eb777bccc07ef8d2",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_9.asset",
+          "count": 1,
+          "guid": "1d941072f3668334493ab9257b4cde1a",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_52.asset",
+          "count": 1,
+          "guid": "dd14c9b72f2e8ee4189eee183ed945c6",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_59.asset",
+          "count": 1,
+          "guid": "5569e7b0ba37588438f82ae053a149da",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_29.asset",
+          "count": 1,
+          "guid": "44e64ac4a5179864ebb553adc23bf60b",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_45.asset",
+          "count": 1,
+          "guid": "66d9a910537a6b944ad7190cac28e646",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_11.asset",
+          "count": 1,
+          "guid": "77dd5e049c8165e459512d9f0cb97cb6",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_66.asset",
+          "count": 1,
+          "guid": "e624ca31451a2f341acc6238a8d016ce",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_43.asset",
+          "count": 1,
+          "guid": "fd0211cb5fb0ed34e93ed38ff8a0564a",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_16.asset",
+          "count": 1,
+          "guid": "7626525fe92d80d41b2c16bc52d118c3",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_27.asset",
+          "count": 1,
+          "guid": "aecb6790126419b41beac8f2dd66fe33",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_62.asset",
+          "count": 1,
+          "guid": "705008df34890694b9dfa41fb2b2f7ee",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_78.asset",
+          "count": 1,
+          "guid": "e861b3d60219ff54892af7eff7383f00",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_46.asset",
+          "count": 1,
+          "guid": "3df0822bbfde88d4aa9dae0396601b9e",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_25.asset",
+          "count": 1,
+          "guid": "ea44acd46f57f504aa20a11fd9047244",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_55.asset",
+          "count": 1,
+          "guid": "e4c58c0950b97c24e9af8d4a28710ff8",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_64.asset",
+          "count": 1,
+          "guid": "74571c3e0d2651146bc07c511f59a19a",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_2.asset",
+          "count": 1,
+          "guid": "804856bbf2d283c43be08efaad076b73",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_69.asset",
+          "count": 1,
+          "guid": "08b652eab07acd04fad48d3c256369ef",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_67.asset",
+          "count": 1,
+          "guid": "9b56688613824264f8b5453767d423b0",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_58.asset",
+          "count": 1,
+          "guid": "313aeaef7357c56448c941f57af18c87",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_31.asset",
+          "count": 1,
+          "guid": "08f7738b5508d724793fb03bbe10613e",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_49.asset",
+          "count": 1,
+          "guid": "5a323b7255117b3478c112df0f20f532",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_5.asset",
+          "count": 1,
+          "guid": "0da0b252335e2d3488155d5ce54f370c",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_73.asset",
+          "count": 1,
+          "guid": "1af2c9336b6b2d9409b6885f74832d34",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_13.asset",
+          "count": 1,
+          "guid": "40975df9bffa0b349b88e8b8f7e3a74f",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/Time Dilation Track_11.asset",
+          "count": 1,
+          "guid": "982124cdd07e8da4a9df7d77fac47aa9",
+          "incoming_local_guid_references": 1
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_65.asset",
+          "count": 1,
+          "guid": "a78846726250c8743b5f7eb716386bd9",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_71.asset",
+          "count": 1,
+          "guid": "948895e955d92e34cb17b7abda97a4e0",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_28.asset",
+          "count": 1,
+          "guid": "c23c09f8d386b734691948868e77a7e4",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_61.asset",
+          "count": 1,
+          "guid": "7aefab23375504a46874004ec8727a8d",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_68.asset",
+          "count": 1,
+          "guid": "2506ee0d82176364299360c29d9e1c29",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_34.asset",
+          "count": 1,
+          "guid": "ebc8e3f66fe8a914698f0dce8937ade0",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_14.asset",
+          "count": 1,
+          "guid": "c1403bc0effdc414f9a7becaf7eb0df5",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_39.asset",
+          "count": 1,
+          "guid": "ecfaf15b88e7e1c489109bb8f189a44b",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_40.asset",
+          "count": 1,
+          "guid": "bce1e1cca0b0d0146b0f30ebc01d6e78",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_24.asset",
+          "count": 1,
+          "guid": "c49ec8ff628759247aa1481e019e53bf",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_51.asset",
+          "count": 1,
+          "guid": "340b9873eaaa50a4bb2289242148527c",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_30.asset",
+          "count": 1,
+          "guid": "21a5fc06fecf71942a2e2a5b42b666a1",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_33.asset",
+          "count": 1,
+          "guid": "b7286ca08dcddde489f7051741bfe8f3",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_50.asset",
+          "count": 1,
+          "guid": "f107e7a14ba1ba442bb52dfa268e6e9b",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_19.asset",
+          "count": 1,
+          "guid": "d9636136f73bcfa499dacbcf179359b2",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_35.asset",
+          "count": 1,
+          "guid": "5f7e7facec5ea584fb2e56651d9c0d6f",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_23.asset",
+          "count": 1,
+          "guid": "0afda0b6aad59d74aadc9414d8c836aa",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_56.asset",
+          "count": 1,
+          "guid": "f33f9a10943a1a348a323d4be8b195b7",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour.asset",
+          "count": 1,
+          "guid": "b65805c039e0e9140b8eceb5f7167530",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_57.asset",
+          "count": 1,
+          "guid": "7d260f355dd668c46b16dde1e0747af7",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_54.asset",
+          "count": 1,
+          "guid": "8e58ae26cb9acfc469a7b4b91d6fcbfe",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_53.asset",
+          "count": 1,
+          "guid": "d2d409d7b19f3ee4684906941979b6aa",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/TimeDilationPlayableAsset.asset",
+          "count": 1,
+          "guid": "eac6cd62e87b43b4aa908f85f6bd2436",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_38.asset",
+          "count": 1,
+          "guid": "8e2dba684ec824c42b01be34f6827ad8",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_60.asset",
+          "count": 1,
+          "guid": "3662ea58ffb6b414c91d3c7c7423bbe2",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_37.asset",
+          "count": 1,
+          "guid": "94761fbd2c528ec49a430324b913dcad",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_79.asset",
+          "count": 1,
+          "guid": "9e0f477c0d0f495498129f28b9d404d2",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_77.asset",
+          "count": 1,
+          "guid": "ca9a5e0e4305d1649839cfaa804adb39",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_21.asset",
+          "count": 1,
+          "guid": "63c719ce4ebf69a49a717bf70dcea93b",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_20.asset",
+          "count": 1,
+          "guid": "8bab47f6e6acabc4d8137845ffd5ad5b",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_4.asset",
+          "count": 1,
+          "guid": "aa04731f10610634196bc79f355e8ab3",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_15.asset",
+          "count": 1,
+          "guid": "676a26ea92c73be4f89921d23988db6d",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_17.asset",
+          "count": 1,
+          "guid": "9ccf990e94f7e004aa9408f2198adc0d",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_32.asset",
+          "count": 1,
+          "guid": "b59844a1eecceec44a645923f3e9193c",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_26.asset",
+          "count": 1,
+          "guid": "987331db342af7e47a8937628d3b2305",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_47.asset",
+          "count": 1,
+          "guid": "a026ccd3a9435e44fb901f68f38bfb6b",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_0.asset",
+          "count": 1,
+          "guid": "e9f2efd7c44498e46b7808c75f24a7cf",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_8.asset",
+          "count": 1,
+          "guid": "b7ce645d0325645418f8ddf2848ebb61",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/TimeDilationPlayableAsset_0.asset",
+          "count": 1,
+          "guid": "8cc4580470a4d624bbbde8d662737e80",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_18.asset",
+          "count": 1,
+          "guid": "dde39945b5da30d4590bbc12c350359f",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_44.asset",
+          "count": 1,
+          "guid": "ca857d9bcb950e44f9dbf8886c8106db",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_74.asset",
+          "count": 1,
+          "guid": "010713201a20b604b8c0c9e10ae05d6e",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_70.asset",
+          "count": 1,
+          "guid": "1effdde942df09b40bc959b6e581a90e",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_6.asset",
+          "count": 1,
+          "guid": "8a333d1364439d5498e6a85dbea92db9",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_1.asset",
+          "count": 1,
+          "guid": "2700c94b67586934c8128bb407d247f8",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_63.asset",
+          "count": 1,
+          "guid": "7a6c8d49368cb9148a31782cbec37bc1",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_12.asset",
+          "count": 1,
+          "guid": "c0b34628ef292c74aaf919ec14ef6ffe",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_75.asset",
+          "count": 1,
+          "guid": "ba0341de885180a4e9529921220ef43f",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_48.asset",
+          "count": 1,
+          "guid": "b79807a8679804b4f9855eeb58661cc0",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/MonoBehaviour/MonoBehaviour_42.asset",
+          "count": 1,
+          "guid": "e9aba04d8f67b7b40827eda1bec5b65c",
+          "incoming_local_guid_references": 0
+        },
+        {
+          "asset": "Assets/Resources/FMODStudioSettingsPlatform_3.asset",
+          "count": 1,
+          "guid": "6f19b9dba1a808347a5f243b8a01c958",
+          "incoming_local_guid_references": 0
+        }
+      ],
+      "referenced_null_script_asset_count": 1,
+      "assets_without_meta_count": 0,
+      "assets_without_meta_samples": [],
+      "metadata_without_guid_count": 0,
+      "metadata_without_guid_samples": [],
+      "orphan_metadata_count": 0,
+      "orphan_metadata_samples": [],
+      "case_conflict_count": 12,
+      "case_conflict_samples": [
+        [
+          "Assets/Texture2D/gaia_mark.png.meta",
+          "Assets/Texture2D/Gaia_Mark.png.meta"
+        ],
+        [
+          "Assets/Texture2D/Gaia_Mark.png",
+          "Assets/Texture2D/gaia_mark.png"
+        ],
+        [
+          "Assets/MonoBehaviour/Bloom.asset",
+          "Assets/MonoBehaviour/bloom.asset"
+        ],
+        [
+          "Assets/MonoBehaviour/vfx_Moldin_slash_FloorAttack_01.asset",
+          "Assets/MonoBehaviour/vfx_Moldin_Slash_FloorAttack_01.asset"
+        ],
+        [
+          "Assets/MonoBehaviour/dash_start.asset",
+          "Assets/MonoBehaviour/dash_Start.asset"
+        ],
+        [
+          "Assets/MonoBehaviour/gaia_mark.playable.meta",
+          "Assets/MonoBehaviour/Gaia_Mark.playable.meta"
+        ],
+        [
+          "Assets/MonoBehaviour/gaia_mark.playable",
+          "Assets/MonoBehaviour/Gaia_Mark.playable"
+        ],
+        [
+          "Assets/MonoBehaviour/vfx_Moldin_Slash_FloorAttack_01.asset.meta",
+          "Assets/MonoBehaviour/vfx_Moldin_slash_FloorAttack_01.asset.meta"
+        ]
+      ]
+    }
+  ],
+  "duplicate_archive_entry_samples": [],
+  "limitations": [
+    "GUID fields are scanned heuristically in YAML text; confirm suspicious references in Unity.",
+    "Static GUID matching does not validate fileID/sub-asset IDs, script layouts, importer settings or runtime behaviour.",
+    "Providers in other export projects are candidates only; no references or files are modified.",
+    "Zero references can be intentional; only null m_Script fields are separately flagged.",
+    "Non-YAML assets are counted as skipped, not treated as validated. No Unity build is performed."
+  ]
+}

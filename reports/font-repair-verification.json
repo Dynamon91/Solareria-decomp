@@ -1,0 +1,48 @@
+{
+  "before": {
+    "yaml_files_scanned": 851,
+    "non_yaml_files_skipped": 0,
+    "missing_local_guid_count": 1,
+    "external_guid_candidates_count": 0,
+    "duplicate_guid_count": 0,
+    "null_script_count": 1,
+    "referenced_null_script_asset_count": 0,
+    "assets_without_meta_count": 0,
+    "metadata_without_guid_count": 0,
+    "orphan_metadata_count": 0,
+    "case_conflict_count": 0,
+    "case_asset_conflict_count": 0,
+    "ignored_export_file_count": 0,
+    "projects_scanned": 1,
+    "unique_globally_missing_guids": 1,
+    "duplicate_archive_entries": 0
+  },
+  "repair": {
+    "guid": "bd7bad007f2987846bfcb8b3ad2c8f7b",
+    "patched_references": 2,
+    "original_texture_path_id": "234",
+    "native_atlas_sha256": "f7bb186894f6acf9a8dbc9204a39e3b6b05dcc47f37f328648325d1e3280553c",
+    "backup": "RecoveryRepairs/font-atlas-2c6282f565bb423c86397df074342c14",
+    "unity_editor_verified": false,
+    "runtime_verified": false
+  },
+  "after": {
+    "yaml_files_scanned": 851,
+    "non_yaml_files_skipped": 0,
+    "missing_local_guid_count": 0,
+    "external_guid_candidates_count": 0,
+    "duplicate_guid_count": 0,
+    "null_script_count": 1,
+    "referenced_null_script_asset_count": 0,
+    "assets_without_meta_count": 0,
+    "metadata_without_guid_count": 0,
+    "orphan_metadata_count": 0,
+    "case_conflict_count": 0,
+    "case_asset_conflict_count": 0,
+    "ignored_export_file_count": 0,
+    "projects_scanned": 1,
+    "unique_globally_missing_guids": 0,
+    "duplicate_archive_entries": 0
+  },
+  "original_base_project_used": true
+}

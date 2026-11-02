@@ -1,0 +1,28 @@
+{
+  "zip_bytes": 3530916440,
+  "zip_sha256": "8592f12ee0cbd4b35e428ea95c6d88bbee65e8aca092728ef3e0a9149b06be79",
+  "all_zip_entries_crc_verified": true,
+  "volume_files_sha256_verified": 9,
+  "bundles": 53,
+  "banks": 6,
+  "audit": {
+    "yaml_files_scanned": 23636,
+    "non_yaml_files_skipped": 0,
+    "missing_local_guid_count": 0,
+    "external_guid_candidates_count": 0,
+    "duplicate_guid_count": 0,
+    "null_script_count": 86,
+    "referenced_null_script_asset_count": 1,
+    "assets_without_meta_count": 0,
+    "metadata_without_guid_count": 0,
+    "orphan_metadata_count": 0,
+    "case_conflict_count": 0,
+    "case_asset_conflict_count": 0,
+    "ignored_export_file_count": 0,
+    "projects_scanned": 1,
+    "unique_globally_missing_guids": 0,
+    "duplicate_archive_entries": 0
+  },
+  "runtime_verified": false,
+  "actual_join_test_passed": true
+}

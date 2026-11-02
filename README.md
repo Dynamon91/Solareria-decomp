@@ -336,3 +336,47 @@ python texture_source.py /percorso/Solateria_Data/resources.assets --report .loc
 Il rapporto conserva identita dei puntatori, dimensioni e hash degli oggetti originali: [reports/font-texture-provenance.json](reports/font-texture-provenance.json). Questa prova non associa ancora individualmente il GUID esportato `bd7bad007f2987846bfcb8b3ad2c8f7b` a uno dei due PathID e non legge i pixel dello stream esterno. L'atlante vuoto e una spiegazione candidata per quella segnalazione, non una correzione dimostrata; sostituirlo automaticamente con l'altro altererebbe un collegamento senza prova.
 
 **Completamento verificato: 60%.** I due GUID restano segnalati; le nuove verifiche distinguono un segnaposto dell'export da un riferimento ordinario e documentano i dati originali del font. Nessuna nuova compilazione Unity o partita dichiarata riuscita.
+
+### Devlog — riferimenti corretti e verifica sul progetto completo
+
+**Nuovo export completo: zero GUID mancanti, zero GUID duplicati, zero conflitti di nomi.** Caricati insieme i 53 bundle originali, i metadati e gli stream originali completi e le 171 DLL Managed. L'export ha completato **30.512 collezioni**, codice di uscita 0, senza errori, warning o asset segnalati come falliti nel log. Il solo conteggio di due GUID distinti del vecchio audit nascondeva numerosi collegamenti allo stesso segnaposto: non era possibile ripararli sostituendo quel GUID con un unico destinatario.
+
+Aggiunto l'exporter diretto in `tools/DirectExport`: usa le API di AssetRipper 2.0.0 senza avviare un server HTTP. Richiede SDK **.NET 10.0.403** o compatibile con Roslyn 5.6; il codice del gioco resta netstandard2.1 e continua a usare la pipeline .NET 8. L'exporter preserva l'atlante LiberationSans vuoto come Texture2D nativa serializzata, con i dati originali 0x0, invece di tentare una conversione bitmap priva di pixel. Gestisce anche il relativo gruppo sintetico di texture per evitare esportazioni duplicate.
+
+```bash
+git clone --depth 1 --branch 2.0.0 https://github.com/AssetRipper/AssetRipper.git .local/AssetRipper
+git -C .local/AssetRipper rev-parse HEAD
+dotnet build tools/DirectExport/DirectExport.csproj
+```
+
+Il commit upstream verificato e `1ac666f47d8e9dedf96afb0b914c70d7656151ea`. Se necessario passare `-p:AssetRipperSource=/percorso/AssetRipper` alla compilazione. Usare una copia completa del gioco originale, con Managed, file assets/resS e tutti gli StreamingAssets; l'output deve essere una cartella nuova, esterna all'input. Esempio PowerShell:
+
+```powershell
+$env:DOTNET_GCHeapHardLimit = "180000000"
+$env:DOTNET_PROCESSOR_COUNT = "2"
+dotnet tools/DirectExport/bin/Debug/net10.0/DirectExport.dll "C:\Giochi\Solateria" "C:\Recupero\ExportNuovo"
+python repair_joint_export.py "C:\Recupero\ExportNuovo\ExportedProject"
+python native_plugins.py "C:\Recupero\ExportNuovo\ExportedProject" "C:\Giochi\Solateria\Solateria_Data\Plugins\x86_64"
+python manage.py audit "C:\Recupero\ExportNuovo\ExportedProject"
+```
+
+Il limite indicato e **6 GiB di heap gestito**, non la RAM totale del processo: caricare tutte le dipendenze insieme richiede piu memoria dell'export isolato. Non mischiare i file del nuovo export con quelli dei vecchi gruppi: il nuovo grafo usa GUID coerenti generati insieme. L'exporter copia esplicitamente StreamingAssets anche quando AssetRipper riconosce una struttura Mixed. Verificati separatamente mediante SHA-256 **62 file StreamingAssets**, inclusi **53 bundle e 6 banchi FMOD**, catalogo e configurazione Addressables; tutte le copie corrispondono agli originali.
+
+`repair_joint_export.py` ha spostato in backup fuori da Assets quattro LightingData sintetici inutilizzati, prodotti dalle varianti duplicate di World's End. La procedura richiede che nessun asset faccia riferimento a questi file e verifica che la scena punti gia a un altro LightingData con collegamento reciproco corretto. Non assegna un destinatario ipotizzato ai quattro riferimenti obsoleti. Ha inoltre rinominato sei coppie asset/meta in conflitto su Windows, mantenendo GUID e contenuti. Un errore durante gli spostamenti ripristina i file gia mossi; operazioni e hash sono conservati in RecoveryRepairs. I percorsi caricati per nome restano da verificare nel runtime.
+
+Per il **vecchio progetto Base o il vecchio progetto unificato** e disponibile anche una correzione mirata del font:
+
+```bash
+python repair_font.py /percorso/VecchioProgettoUnity
+```
+
+Confrontati con il materiale originale PathID 21 tutti i **67 float e 12 colori**, il puntatore alla texture PathID 234 e la catena materiale/fallback. La patch ripristina la Texture2D nativa originale vuota sotto il GUID atteso e cambia soltanto il tipo delle due PPtr da importazione bitmap a oggetto serializzato. Hash dei due asset e delle loro meta devono corrispondere alla baseline verificata; originali in backup e ripristino automatico su errore. **Prova reale sul vecchio Base: GUID mancanti da 1 a 0.** La patch non tenta di correggere i segnaposto degli altri vecchi gruppi: per quelli serve l'export congiunto dai binari originali.
+
+Il nuovo audit include anche i formati nativi Texture2D, ShaderVariantCollection, mixer, mask e stati degli animator. Sul nuovo progetto riparato sono stati controllati **23.636 YAML**, con tutti i controlli GUID/meta/nomi superati. Restano gli **86 script nulli gia documentati nei binari originali**; non vengono cancellati o riassegnati. Installati anche i quattro plugin audio/controller verificati. Superati **100 test locali**, inclusi scrittura interrotta, ripristino, asset modificati, dati di illuminazione ancora referenziati e verifica delle parti di archivio. Gli strumenti diretti pubblicati compilano senza errori e senza warning.
+
+**Tentativo reale di test Unity eseguito sul nuovo candidato:** l'editor termina ancora con codice **199**, prima dell'importazione, per il limite IPC/licenze dell'ambiente. Quindi i riferimenti sono corretti nei controlli statici, mentre shader, scene, audio, controller e una partita non sono ancora convalidati nell'editor/player. **Completamento del gioco verificato: 60%, invariato.**
+
+Evidenze: [riepilogo](reports/reference-repair-summary.json), [audit finale](reports/repaired-project-audit.json), [operazioni di riparazione](reports/joint-export-repair.json), [prova font Base](reports/font-repair-verification.json). Il pacchetto aggiornato e distinto dal vecchio Recovery: contiene il nuovo progetto coerente, i plugin e gli StreamingAssets, mentre i vecchi file restano conservati. Per riunire le parti scaricate usare `python join_parts.py Solateria_Repaired_Unity_manifest.json`; ogni parte e lo ZIP finale vengono verificati con SHA-256 prima della creazione del file definitivo.
+
+
+Il pacchetto finale misura **3.530.916.440 byte**, in nove parti; comprende 53 bundle e 6 banchi audio. Verificati CRC di tutte le voci ZIP, SHA-256 di tutte le parti e una riunione reale con `join_parts.py`. L'audit ripetuto sullo ZIP conferma ancora zero GUID mancanti e zero conflitti. [Verifica archivio](reports/repaired-package-verification.json), [manifesto SHA-256](reports/repaired-package-manifest.json).

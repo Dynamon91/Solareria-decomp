@@ -1,0 +1,147 @@
+{
+  "state": "complete",
+  "before": {
+    "yaml_files_scanned": 23639,
+    "non_yaml_files_skipped": 0,
+    "missing_local_guid_count": 4,
+    "external_guid_candidates_count": 0,
+    "duplicate_guid_count": 0,
+    "null_script_count": 86,
+    "referenced_null_script_asset_count": 1,
+    "assets_without_meta_count": 0,
+    "metadata_without_guid_count": 0,
+    "orphan_metadata_count": 0,
+    "case_conflict_count": 12,
+    "case_asset_conflict_count": 6,
+    "ignored_export_file_count": 0,
+    "projects_scanned": 1,
+    "unique_globally_missing_guids": 4,
+    "duplicate_archive_entries": 0
+  },
+  "after": {
+    "yaml_files_scanned": 23635,
+    "non_yaml_files_skipped": 0,
+    "missing_local_guid_count": 0,
+    "external_guid_candidates_count": 0,
+    "duplicate_guid_count": 0,
+    "null_script_count": 86,
+    "referenced_null_script_asset_count": 1,
+    "assets_without_meta_count": 0,
+    "metadata_without_guid_count": 0,
+    "orphan_metadata_count": 0,
+    "case_conflict_count": 0,
+    "case_asset_conflict_count": 0,
+    "ignored_export_file_count": 0,
+    "projects_scanned": 1,
+    "unique_globally_missing_guids": 0,
+    "duplicate_archive_entries": 0
+  },
+  "operations": [
+    {
+      "source": "Assets/Scenes/World\u2019s End/WorldsEnd_01/LightingData.asset",
+      "target": "RecoveryRepairs/joint-05e262f1203b43898f1e34bc9ffb90b2/quarantine/Assets/Scenes/World\u2019s End/WorldsEnd_01/LightingData.asset",
+      "sha256": "1a9162c6e8891195e3fa2191c9efb15f1f32dc8aabd94828c1ef1026530d2eaf"
+    },
+    {
+      "source": "Assets/Scenes/World\u2019s End/WorldsEnd_01/LightingData.asset.meta",
+      "target": "RecoveryRepairs/joint-05e262f1203b43898f1e34bc9ffb90b2/quarantine/Assets/Scenes/World\u2019s End/WorldsEnd_01/LightingData.asset.meta",
+      "sha256": "363f473bab73afbc5ab74bce5b66199f1c764075086771562678f583a36e01bf"
+    },
+    {
+      "source": "Assets/Scenes/World\u2019s End/WorldsEnd_02/LightingData.asset",
+      "target": "RecoveryRepairs/joint-05e262f1203b43898f1e34bc9ffb90b2/quarantine/Assets/Scenes/World\u2019s End/WorldsEnd_02/LightingData.asset",
+      "sha256": "9e959df116071ffef66dd7295e3e89cc79e7c2aa9047d92e2f5e08033b80d0ad"
+    },
+    {
+      "source": "Assets/Scenes/World\u2019s End/WorldsEnd_02/LightingData.asset.meta",
+      "target": "RecoveryRepairs/joint-05e262f1203b43898f1e34bc9ffb90b2/quarantine/Assets/Scenes/World\u2019s End/WorldsEnd_02/LightingData.asset.meta",
+      "sha256": "4b6c52df63baf8a3914fa0885fd2484c45484d95744b3a99b114620053e0389d"
+    },
+    {
+      "source": "Assets/Scenes/World\u2019s End/WorldsEnd_03 (boss)/LightingData.asset",
+      "target": "RecoveryRepairs/joint-05e262f1203b43898f1e34bc9ffb90b2/quarantine/Assets/Scenes/World\u2019s End/WorldsEnd_03 (boss)/LightingData.asset",
+      "sha256": "348d4f761269c2e4599f35588afb8a357f2dd5f442d14f696786158b11e97c27"
+    },
+    {
+      "source": "Assets/Scenes/World\u2019s End/WorldsEnd_03 (boss)/LightingData.asset.meta",
+      "target": "RecoveryRepairs/joint-05e262f1203b43898f1e34bc9ffb90b2/quarantine/Assets/Scenes/World\u2019s End/WorldsEnd_03 (boss)/LightingData.asset.meta",
+      "sha256": "992ae625b7b65ac8f994ace14f9b05f552ecc77c72510985b102121c524dd83a"
+    },
+    {
+      "source": "Assets/Scenes/World\u2019s End/WorldsEnd_90/LightingData.asset",
+      "target": "RecoveryRepairs/joint-05e262f1203b43898f1e34bc9ffb90b2/quarantine/Assets/Scenes/World\u2019s End/WorldsEnd_90/LightingData.asset",
+      "sha256": "8be0dac9cd36f9d4fd8bdeb631388bd937a6b4966b6c1b20562cece3bb68b7d4"
+    },
+    {
+      "source": "Assets/Scenes/World\u2019s End/WorldsEnd_90/LightingData.asset.meta",
+      "target": "RecoveryRepairs/joint-05e262f1203b43898f1e34bc9ffb90b2/quarantine/Assets/Scenes/World\u2019s End/WorldsEnd_90/LightingData.asset.meta",
+      "sha256": "37bab8f57c187e5280d7a429ce681cd163ba6885bf10fa530b2e5631cc59fbdf"
+    },
+    {
+      "source": "Assets/Texture2D/gaia_mark.png",
+      "target": "Assets/Texture2D/gaia_mark__23d9fd822894.png",
+      "sha256": "2d4ed3a391171b2ebc554f8d877c20f4c6adacfa17aab5ae12b62666c219be00"
+    },
+    {
+      "source": "Assets/Texture2D/gaia_mark.png.meta",
+      "target": "Assets/Texture2D/gaia_mark__23d9fd822894.png.meta",
+      "sha256": "74ed2572307eae48547e27de8ef173efeab68dd18f56755fd7aabf4bc480bcf4"
+    },
+    {
+      "source": "Assets/MonoBehaviour/bloom.asset",
+      "target": "Assets/MonoBehaviour/bloom__94b81440c15d.asset",
+      "sha256": "6f551f4d8eb40fe5f662c27253ec8d88765061d9592ff910dc7e9da2d1df1c24"
+    },
+    {
+      "source": "Assets/MonoBehaviour/bloom.asset.meta",
+      "target": "Assets/MonoBehaviour/bloom__94b81440c15d.asset.meta",
+      "sha256": "75d0cd627c1a7f1ffc68c60a1063612380b0a70bee4eaf10139abb3ad16db519"
+    },
+    {
+      "source": "Assets/MonoBehaviour/vfx_Moldin_slash_FloorAttack_01.asset",
+      "target": "Assets/MonoBehaviour/vfx_Moldin_slash_FloorAttack_01__aaf03dd3c31e.asset",
+      "sha256": "2599674168e6aa95378dcc4a6625ec775d1fe5ad39ae6c71cbf14426d78d1ad0"
+    },
+    {
+      "source": "Assets/MonoBehaviour/vfx_Moldin_slash_FloorAttack_01.asset.meta",
+      "target": "Assets/MonoBehaviour/vfx_Moldin_slash_FloorAttack_01__aaf03dd3c31e.asset.meta",
+      "sha256": "67804e0b6d8d3a079912a0153a1a8b0355568c4354f6bfaa307bfea806ced864"
+    },
+    {
+      "source": "Assets/MonoBehaviour/dash_start.asset",
+      "target": "Assets/MonoBehaviour/dash_start__bf5873cac68a.asset",
+      "sha256": "76e6347b6fb89aff2c6a56bdfe2a84051f298489c966910383237a127c37dc80"
+    },
+    {
+      "source": "Assets/MonoBehaviour/dash_start.asset.meta",
+      "target": "Assets/MonoBehaviour/dash_start__bf5873cac68a.asset.meta",
+      "sha256": "f098f21b5bd47082c0f37074499359ec3e75b1af2b657288bef08d865221163a"
+    },
+    {
+      "source": "Assets/MonoBehaviour/gaia_mark.playable",
+      "target": "Assets/MonoBehaviour/gaia_mark__f7c6da76f5b0.playable",
+      "sha256": "26c03aea3587642adb6b24a50796596a2d95de16591713a1d578a8b41787a17f"
+    },
+    {
+      "source": "Assets/MonoBehaviour/gaia_mark.playable.meta",
+      "target": "Assets/MonoBehaviour/gaia_mark__f7c6da76f5b0.playable.meta",
+      "sha256": "4cc610a9f6c43d3a413b37aa789ed3f0e9edf5ab1007379b791f1ed87c7853f6"
+    },
+    {
+      "source": "Assets/MonoBehaviour/w1.asset",
+      "target": "Assets/MonoBehaviour/w1__afe35de499fc.asset",
+      "sha256": "9abd0d54129c982e303a349651bedd2d35741f92458c05a0758a03cfa816ffd6"
+    },
+    {
+      "source": "Assets/MonoBehaviour/w1.asset.meta",
+      "target": "Assets/MonoBehaviour/w1__afe35de499fc.asset.meta",
+      "sha256": "ebb099a89cb4ef1cfc19e4c05d5ce1461255c940948944a3cce07d191150ff33"
+    }
+  ],
+  "quarantined_generated_lighting_assets": 4,
+  "renamed_asset_meta_pairs": 6,
+  "serialized_references_reassigned": false,
+  "payload_bytes_unchanged": true,
+  "unity_editor_verified": false,
+  "runtime_verified": false
+}
