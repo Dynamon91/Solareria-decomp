@@ -317,3 +317,22 @@ Il controllo Editor della build verifica ora la presenza dei quattro PluginImpor
 Analizzati anche gli import nativi: Rewired_DirectInput dipende da `VCRUNTIME140.dll` e dal runtime C universale di Windows. Sul sistema di prova Windows va quindi verificata la disponibilita del [Visual C++ Redistributable x64 ufficiale](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist). Le DLL di sistema non vengono raccolte o ridistribuite con gli asset. Riferimento API: [PluginImporter.SetEditorData](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/PluginImporter.SetEditorData.html).
 
 Eseguita una copia reale dei quattro plugin in un progetto minimo di prova: byte originali preservati e quattro meta create. Questo verifica la procedura sui binari effettivi, **non** l'importazione del gioco completo o il funzionamento di audio e controller. Evidenza: [reports/native-plugins-verification.json](reports/native-plugins-verification.json). Superati **90 test locali**, compresi rifiuto di file corrotti, DLL managed, architettura errata e duplicati. **Completamento verificato: 60%**; integrazione nell'editor e partita restano da convalidare nell'ambiente senza il blocco IPC.
+
+### Devlog — riferimenti mancanti e atlante font originale
+
+Verificato direttamente nei sorgenti delle versioni usate che `0000000deadbeef15deadf00d0000000` e il valore serializzato di **UnityGuid.MissingReference**, non il GUID di un asset recuperabile. La verifica e nel [test ufficiale di AssetRipper.Primitives 3.2.0](https://github.com/AssetRipper/AssetRipper.Primitives/blob/d759b3db98bf2a1cb8c2181faf5d405610aac585/AssetRipper.Primitives.Tests/UnityGuidTests.cs). AssetRipper 2.0.0 puo emetterlo sia per un puntatore non risolto sia per un asset saltato dall'export; il valore da solo non identifica il destinatario originario. Riferimenti: [ProjectYamlWalker](https://github.com/AssetRipper/AssetRipper/blob/1ac666f47d8e9dedf96afb0b914c70d7656151ea/Source/AssetRipper.Export.UnityProjects/Project/ProjectYamlWalker.cs) e [SkipExportCollection](https://github.com/AssetRipper/AssetRipper/blob/1ac666f47d8e9dedf96afb0b914c70d7656151ea/Source/AssetRipper.Export.UnityProjects/SkipExportCollection.cs).
+
+L'audit ora lo classifica come `assetripper_missing_reference`. Creare un asset con quel GUID non nasconde piu la segnalazione e non viene presentato come una riparazione. Nessun YAML del gioco viene modificato. Superati **91 test locali**, inclusa questa regressione.
+
+Esaminato realmente `resources.assets` originale con UnityPy 1.25.4. Esistono **due texture con lo stesso nome LiberationSans SDF Atlas**: PathID 234 e gia vuoto nel binario originale, dimensioni 0x0, nessun pixel inline o esterno; PathID 235 e 1024x1024, con 1.048.576 byte dichiarati nello stream esterno `resources.assets.resS`. Il materiale originale PathID 21 punta alla texture vuota; il materiale PathID 22 e le varianti Outline/Drop Shadow puntano alla texture 235. Questo impedisce di scegliere una texture soltanto in base al nome.
+
+Aggiunto un controllo riproducibile di sola lettura:
+
+```bash
+python -m pip install -r requirements-source.txt
+python texture_source.py /percorso/Solateria_Data/resources.assets --report .local/reports/font-texture-provenance.json
+```
+
+Il rapporto conserva identita dei puntatori, dimensioni e hash degli oggetti originali: [reports/font-texture-provenance.json](reports/font-texture-provenance.json). Questa prova non associa ancora individualmente il GUID esportato `bd7bad007f2987846bfcb8b3ad2c8f7b` a uno dei due PathID e non legge i pixel dello stream esterno. L'atlante vuoto e una spiegazione candidata per quella segnalazione, non una correzione dimostrata; sostituirlo automaticamente con l'altro altererebbe un collegamento senza prova.
+
+**Completamento verificato: 60%.** I due GUID restano segnalati; le nuove verifiche distinguono un segnaposto dell'export da un riferimento ordinario e documentano i dati originali del font. Nessuna nuova compilazione Unity o partita dichiarata riuscita.

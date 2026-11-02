@@ -1,0 +1,106 @@
+{
+  "source_name": "resources.assets",
+  "source_sha256": "8e1632dde8d2561a3d6017581bbb41a61d179c6a106d002bc89d11c31e99377a",
+  "unity_version": "2022.3.62f2",
+  "unitypy_version": "1.25.4",
+  "read_only": true,
+  "textures": [
+    {
+      "collection": "resources.assets",
+      "path_id": "234",
+      "name": "LiberationSans SDF Atlas",
+      "source_object_bytes": 140,
+      "source_object_sha256": "0074cb84747bce857242bbd1935f003d97a96ef0aa44d732b3d325b29793c96a",
+      "width": 0,
+      "height": 0,
+      "texture_format": 1,
+      "inline_image_bytes": 0,
+      "stream": {
+        "path": "",
+        "offset": "0",
+        "size": 0
+      },
+      "empty_in_original": true
+    },
+    {
+      "collection": "resources.assets",
+      "path_id": "235",
+      "name": "LiberationSans SDF Atlas",
+      "source_object_bytes": 164,
+      "source_object_sha256": "d491686a530ffa72f59c76d3608b26248dc28c36cfe40e5c6ba1ff90833fef52",
+      "width": 1024,
+      "height": 1024,
+      "texture_format": 1,
+      "inline_image_bytes": 0,
+      "stream": {
+        "path": "resources.assets.resS",
+        "offset": "482216592",
+        "size": 1048576
+      },
+      "empty_in_original": false
+    }
+  ],
+  "materials": [
+    {
+      "collection": "resources.assets",
+      "path_id": "10",
+      "name": "LiberationSans SDF - Drop Shadow",
+      "source_object_bytes": 1680,
+      "source_object_sha256": "4bbc326f4db2b352898a1466cae722a2632fc47b2e4349757dc967f115408e26",
+      "textures": [
+        {
+          "property": "_MainTex",
+          "file_id": 0,
+          "path_id": "235"
+        }
+      ]
+    },
+    {
+      "collection": "resources.assets",
+      "path_id": "11",
+      "name": "LiberationSans SDF - Outline",
+      "source_object_bytes": 1608,
+      "source_object_sha256": "20633e7a52b0327cd451e682ebc6f46e05a6034e143c93a9b99b14953010e6a2",
+      "textures": [
+        {
+          "property": "_MainTex",
+          "file_id": 0,
+          "path_id": "235"
+        }
+      ]
+    },
+    {
+      "collection": "resources.assets",
+      "path_id": "21",
+      "name": "LiberationSans SDF Material",
+      "source_object_bytes": 2016,
+      "source_object_sha256": "ff5c1c7c85a98051102041539799f0ce3a8b5110ea10e415cab770a7f0335787",
+      "textures": [
+        {
+          "property": "_MainTex",
+          "file_id": 0,
+          "path_id": "234"
+        }
+      ]
+    },
+    {
+      "collection": "resources.assets",
+      "path_id": "22",
+      "name": "LiberationSans SDF Material",
+      "source_object_bytes": 956,
+      "source_object_sha256": "609d8c52b14981446fe7ea0706bfddcc3232ab93d48f09188e3e571669b2017b",
+      "textures": [
+        {
+          "property": "_MainTex",
+          "file_id": 0,
+          "path_id": "235"
+        }
+      ]
+    }
+  ],
+  "exported_guid_mapping_verified": false,
+  "external_texture_streams_read": false,
+  "assets_repaired": false,
+  "unity_editor_verified": false,
+  "runtime_verified": false
+}

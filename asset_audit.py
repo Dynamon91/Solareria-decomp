@@ -8,6 +8,8 @@ import re
 import zipfile
 
 BUILTIN_GUIDS = {'0'*32, '0'*16+'e'+'0'*15, '0'*16+'f'+'0'*15}
+# AssetRipper.Primitives 3.2.0, UnityGuidTests.MissingReferenceSerializedCorrectly.
+ASSET_RIPPER_MISSING_REFERENCE = '0000000deadbeef15deadf00d0000000'
 META_GUID = re.compile(rb'(?m)^guid:[ \t]*([0-9a-fA-F]{32})[ \t]*\r?$')
 REFERENCE = re.compile(rb'\bguid:[ \t]{0,32}([0-9a-fA-F]{32})(?=[\s,}])')
 NULL_SCRIPT = re.compile(rb'\bm_Script:[ \t]{0,32}\{[^}\r\n]{0,128}\bfileID:[ \t]{0,32}0[ \t]{0,32}[,}]')
@@ -116,10 +118,11 @@ def audit(path, samples=5):
                     null_count += count
                     nulls.append({'asset': relative, 'count': count, 'guid': asset_guids.get(relative)})
                 for guid, count in references.items():
-                    if guid in BUILTIN_GUIDS or guid in available: continue
+                    if guid in BUILTIN_GUIDS or (guid in available and guid != ASSET_RIPPER_MISSING_REFERENCE): continue
                     if guid not in missing:
-                        candidates = providers.get(guid, [])
-                        missing[guid] = {'guid': guid, 'occurrences': 0, 'sample_assets': [],
+                        placeholder = guid == ASSET_RIPPER_MISSING_REFERENCE
+                        candidates = [] if placeholder else providers.get(guid, [])
+                        missing[guid] = {'guid': guid, 'reference_kind': 'assetripper_missing_reference' if placeholder else 'asset_guid', 'occurrences': 0, 'sample_assets': [],
                                          'candidate_provider_count': len(candidates), 'candidate_providers': candidates[:samples]}
                         if not candidates: global_missing.add(guid)
                     detail = missing[guid]; detail['occurrences'] += count
